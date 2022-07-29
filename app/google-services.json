@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "641877192185",
+    "project_id": "eastream-app",
+    "storage_bucket": "eastream-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:641877192185:android:cfe6ce139827e2ea632128",
+        "android_client_info": {
+          "package_name": "com.eastream.eastream"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "641877192185-jrv8c2s43rhruef6rh66rgcg4f0lch3d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUX0DAPxmvp69vUoovm-t1Xw8HEuvU_KU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "641877192185-jrv8c2s43rhruef6rh66rgcg4f0lch3d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

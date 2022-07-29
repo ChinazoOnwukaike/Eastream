@@ -4,7 +4,7 @@
             "outputFile": "com.eastream.eastream.app-mergeDebugResources-66:/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Chinazo\\.gradle\\caches\\transforms-3\\5f0ab28b360972120d493660e0f97e52\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\Chinazo\\.gradle\\caches\\transforms-3\\114545e50a2f719d982244000d9c3f3e\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Chinazo\\.gradle\\caches\\transforms-3\\30688d796cf24d5e762f69d80a4ee677\\transformed\\material-1.6.1\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\Chinazo\\.gradle\\caches\\transforms-3\\cd10d3e7cd25fa938b9c7f992a9afb47\\transformed\\material-1.6.1\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,5,8,13,17,20,23,26,31,34,38",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
@@ -42,7 +42,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Chinazo\\.gradle\\caches\\transforms-3\\262641b53a24842a1c45fcdcc8673acc\\transformed\\appcompat-1.2.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\Chinazo\\.gradle\\caches\\transforms-3\\e6f6966ab768d5d0ad54a37b83930ea7\\transformed\\appcompat-1.2.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",

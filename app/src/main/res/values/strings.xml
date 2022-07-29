@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Eastream</string>
+    <string name="create_acct">Passwords must have at least 6 characters</string>
+</resources>
