@@ -1,0 +1,780 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml:2:1-31:12
+MERGED from [androidx.compose.ui:ui-tooling:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\b8d56d02f1476e6c474d361bbf3ee67e\transformed\ui-tooling-1.1.0-beta01\AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.compose.material:material:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\1f79a04e6bd97c11745ab8f2b0bd2473\transformed\material-1.1.0-beta01\AndroidManifest.xml:17:1-24:12
+MERGED from [io.coil-kt:coil-compose:1.4.0] C:\Users\Chinazo\.gradle\caches\transforms-3\73445683e7a09034f7b317c0367592d1\transformed\coil-compose-1.4.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.hilt:hilt-navigation-compose:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\353889b2b6cb04c1f22468382b9bc9b1\transformed\hilt-navigation-compose-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-compose:2.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\bc0be349a4feffed78427f82f698177e\transformed\navigation-compose-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\fdff705ce8c632667c1118bade441b2f\transformed\lifecycle-viewmodel-compose-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.ui:ui-tooling-data:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\9af6a0750d35817ffd61c808d46c833e\transformed\ui-tooling-data-1.1.0-beta01\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.material:material-ripple:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\b6d70b2803be8f69024e435ef23ce48d\transformed\material-ripple-1.1.0-beta01\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.foundation:foundation:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\92f125e5fb33d96aec162d92e69f19f2\transformed\foundation-1.1.0-beta01\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.animation:animation:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\b7477ed1bf0d4b2e1244ebbbb82e4e61\transformed\animation-1.1.0-beta01\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.material:material-icons-extended:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\39b1f204acd3b4af87b1ac685656f637\transformed\material-icons-extended-1.1.0-beta01\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.material:material-icons-core:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\691b445853ed7aa51dea43b75459fbaf\transformed\material-icons-core-1.1.0-beta01\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.foundation:foundation-layout:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\a139b275d6793132334093755338279e\transformed\foundation-layout-1.1.0-beta01\AndroidManifest.xml:17:1-24:12
+MERGED from [io.coil-kt:coil-compose-base:1.4.0] C:\Users\Chinazo\.gradle\caches\transforms-3\d557d5c0a9e75f2ca1138529ff6736da\transformed\coil-compose-base-1.4.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.activity:activity-compose:1.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\7f63ce7a7bf8466950181622be7070b6\transformed\activity-compose-1.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.animation:animation-core:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\8590171616284643d38574c6a53e989d\transformed\animation-core-1.1.0-beta01\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.19.0] C:\Users\Chinazo\.gradle\caches\transforms-3\3daa45602a754e3be32eb5b35ccb2c76\transformed\accompanist-drawablepainter-0.19.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.ui:ui:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\03016554e1b9aa077e4c08c592ab5e8d\transformed\ui-1.1.0-beta01\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\7c3a1c84f75c6500b8dd48191f2562a0\transformed\navigation-runtime-ktx-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.hilt:hilt-navigation:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\782560e3dd55680a8c387dbded675e0d\transformed\hilt-navigation-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-runtime:2.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\1e1ab31b5ebc34edfbef23a787fe548f\transformed\navigation-runtime-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\f85b589afd304810afc5d4d585e3de90\transformed\navigation-common-ktx-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common:2.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\78448b5bf7a94ad52eabaa7aba4261d4\transformed\navigation-common-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity-ktx:1.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\2f11072e712654db33a03d8f41d75c69\transformed\activity-ktx-1.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\edcbbe4dd5741b105635c86c07119c43\transformed\lifecycle-runtime-ktx-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\5ebc16b8e8fd4d39e0286550057aa9ba\transformed\lifecycle-viewmodel-ktx-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.ui:ui-tooling-preview:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\4b769b2dc7d2eb0e1c2423854c85253d\transformed\ui-tooling-preview-1.1.0-beta01\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.ui:ui-text:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\3c36e601e9fd3a20b4b263b7e5460ec2\transformed\ui-text-1.1.0-beta01\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.runtime:runtime-saveable:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\8b170f42cc346b7eda187b2226016b3f\transformed\runtime-saveable-1.1.0-beta01\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.ui:ui-graphics:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\0c4ce4018c156b87d91052635343750e\transformed\ui-graphics-1.1.0-beta01\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.ui:ui-unit:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\8e71336306a344976affe9747ab58240\transformed\ui-unit-1.1.0-beta01\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.ui:ui-geometry:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\8f581e2c5743f36baf8aa065652a3913\transformed\ui-geometry-1.1.0-beta01\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.runtime:runtime:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\4e15fae513a8ee274f56685afb289e9f\transformed\runtime-1.1.0-beta01\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03] C:\Users\Chinazo\.gradle\caches\transforms-3\85014c216fee53c580582ede8286e18b\transformed\hilt-lifecycle-viewmodel-1.0.0-alpha03\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.dagger:hilt-android:2.39] C:\Users\Chinazo\.gradle\caches\transforms-3\136d91cd4da22a618134b6f8f1cdb619\transformed\hilt-android-2.39\AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.material:material:1.6.1] C:\Users\Chinazo\.gradle\caches\transforms-3\30688d796cf24d5e762f69d80a4ee677\transformed\material-1.6.1\AndroidManifest.xml:17:1-26:12
+MERGED from [com.google.android.gms:play-services-auth:20.2.0] C:\Users\Chinazo\.gradle\caches\transforms-3\3fc4d7a81bc758500c104ebb75d743fe\transformed\play-services-auth-20.2.0\AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.firebase:firebase-auth-ktx:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\a83b6fff7a2e3f625d99ebd4844bfeb8\transformed\firebase-auth-ktx-21.0.6\AndroidManifest.xml:2:1-17:12
+MERGED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\9dfc58995df1b755dab198d4bae6a4ff\transformed\firebase-auth-21.0.6\AndroidManifest.xml:17:1-73:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\6968a3e9889a8a6f78654e81f9c1e1a6\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-firestore:24.2.1] C:\Users\Chinazo\.gradle\caches\transforms-3\efdef9386b4146efcdd9347d5a99656a\transformed\firebase-firestore-24.2.1\AndroidManifest.xml:2:1-26:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\5667f463bfac461f221eec086554fca8\transformed\play-services-auth-api-phone-18.0.1\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\2dbe35d36fac21506b2508ad0a455ea7\transformed\play-services-auth-base-18.0.1\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\79eb3552a7290deb3de631f20015d42c\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\e24247c817b1659c4cfd608066c1f158\transformed\firebase-appcheck-interop-16.0.0\AndroidManifest.xml:15:1-26:12
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\0e0ff95879c785bdd38cccd1b2736c98\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\3294ff3e9aa38cff35cbce4dead4cdd5\transformed\play-services-base-18.0.1\AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\b854fcbd315eee2d744af3badec4a041\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-analytics-ktx:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\61ed9b4ef59bc8e4aa3d9f4516997f85\transformed\firebase-analytics-ktx-21.1.0\AndroidManifest.xml:2:1-17:12
+MERGED from [com.google.firebase:firebase-common-ktx:20.1.1] C:\Users\Chinazo\.gradle\caches\transforms-3\95afeb846341d48c0b25c333305069f8\transformed\firebase-common-ktx-20.1.1\AndroidManifest.xml:2:1-21:12
+MERGED from [com.google.firebase:firebase-analytics:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\03f6a1cc06d5355688e782810aaab7ac\transformed\firebase-analytics-21.1.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\a9e4690ce8d346c82e3c1f21adc0761c\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:17:1-37:12
+MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\6bd77388a965bfc7d228f49dd72c6636\transformed\firebase-installations-17.0.1\AndroidManifest.xml:2:1-24:12
+MERGED from [com.google.firebase:firebase-common:20.1.1] C:\Users\Chinazo\.gradle\caches\transforms-3\1d20f0db56f1a45b9a749e91dd497c3f\transformed\firebase-common-20.1.1\AndroidManifest.xml:15:1-40:12
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\e8c3f18cda5adcbdf000a891229ea56f\transformed\firebase-installations-interop-17.0.1\AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\946a71c8973b06f1915280d14e8e564c\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\27f784e836fa2cd6e3a2b1a22a6602d9\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:17:1-46:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\2c51fcf9123dd2521475719a688c041c\transformed\play-services-measurement-sdk-21.1.0\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\2514ca58d58bb2fd6cfe85027fcb84ec\transformed\play-services-measurement-impl-21.1.0\AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\2fc314772080ef2ca40d3e2958a7c368\transformed\play-services-ads-identifier-18.0.0\AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\16f8c4edcaa36b6c3f66b16d937dcf64\transformed\play-services-measurement-sdk-api-21.1.0\AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-measurement-base:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\c7b2b27b4e7a387a1666fe07a89cb951\transformed\play-services-measurement-base-21.1.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\Chinazo\.gradle\caches\transforms-3\cf0a40d7dfc716f24300df4fd1d8239d\transformed\play-services-stats-17.0.2\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\8e7a25a2f730fb0e2eeb3ad3a038432e\transformed\firebase-measurement-connector-19.0.0\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\dd145f8f847abcf7319d8392b265562a\transformed\play-services-basement-18.0.0\AndroidManifest.xml:16:1-26:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\c0d11136582adf62d62f202659c47411\transformed\constraintlayout-2.0.1\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\Chinazo\.gradle\caches\transforms-3\262641b53a24842a1c45fcdcc8673acc\transformed\appcompat-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.3.2] C:\Users\Chinazo\.gradle\caches\transforms-3\a13a3ba713c6fc11490055f27c7ccc5e\transformed\fragment-1.3.2\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\17d242c891a679fa5a05d65e5f16bf0e\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\138ed46f8f4cc592e307caf075efdd52\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\c1c3e15671872a84a34831a746c982a9\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-test-manifest:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\0370727729f6e7fd826386d6850e528b\transformed\ui-test-manifest-1.1.0-beta01\AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.activity:activity:1.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\0a4d1ad15dbd6f5025a08aa6a0b010bf\transformed\activity-1.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\aed971f7a51caea4d0ab64470f7a719a\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\431fc2405b7c01f9853539fdc5c0296e\transformed\lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [io.coil-kt:coil:1.4.0] C:\Users\Chinazo\.gradle\caches\transforms-3\0c736ec91539470db07497efa7b5586a\transformed\coil-1.4.0\AndroidManifest.xml:2:1-9:12
+MERGED from [io.coil-kt:coil-base:1.4.0] C:\Users\Chinazo\.gradle\caches\transforms-3\25158fac14ffba19bc15b8a2c315076a\transformed\coil-base-1.4.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.core:core-ktx:1.8.0] C:\Users\Chinazo\.gradle\caches\transforms-3\cf581cd820d0af5ae303b21f7d608bbb\transformed\core-ktx-1.8.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.compose.ui:ui-util:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\ec0a644a2201dbd9fdb9e9e046b75d2e\transformed\ui-util-1.1.0-beta01\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.0] C:\Users\Chinazo\.gradle\caches\transforms-3\cfb0a0f70ba645691df43107dd7d032c\transformed\savedstate-ktx-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\Chinazo\.gradle\caches\transforms-3\eff7705d7ef48a64d2f3fbefefbc9d28\transformed\savedstate-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.autofill:autofill:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\e1e47d92adbbcbd424c11871dea4f444\transformed\autofill-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\2f2f18c0e4fd8fbef813b3403e07897c\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\Chinazo\.gradle\caches\transforms-3\1a777d126f4d167867cfefee25274f49\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\Chinazo\.gradle\caches\transforms-3\ab9fe6f0d29a4e59269036ac017ff784\transformed\transition-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.3.1] C:\Users\Chinazo\.gradle\caches\transforms-3\d516a7d5d874bc4c2fc5fa411252e2ea\transformed\appcompat-resources-1.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\09f3befb4b4acf020a07ded014bcad68\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\66d845cfeb7337cef2952b120959e1a5\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.browser:browser:1.4.0] C:\Users\Chinazo\.gradle\caches\transforms-3\eba6773a2655d38cd9bc0f6b70f44df2\transformed\browser-1.4.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\cfbf115ea44aa46aa86149acc24fad63\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\e9d09e5be1e7162e5b950e44cf1f97d8\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\30d78c41e685ba6363a5ab93fc4ff396\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.8.0] C:\Users\Chinazo\.gradle\caches\transforms-3\575acd4e1c679c2761bc8372e7534631\transformed\core-1.8.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\35724067d3c9152eb6c33ae1744ef65c\transformed\profileinstaller-1.1.0-beta01\AndroidManifest.xml:17:1-48:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\3c720e554707dcec1fe405d64f33cfd6\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\5f0ab28b360972120d493660e0f97e52\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\c8c9b14d108379846a2fa4cd6dc0a3d1\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\f5295d0c2a72a8b5e74dc1e2fc9ee626\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\0811cc9cfcb34e2c7a5858d9a93e329e\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\5fbd3594ec4967a6216b932498312fe7\transformed\firebase-components-17.0.0\AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Chinazo\.gradle\caches\transforms-3\bfef41e43c87077d03ea87f506f07687\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\c4c66794ba550cd06f4dade3780ca28a\transformed\startup-runtime-1.0.0\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\cdf6653f5fe3958283cfe59237b0760a\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\c8df1803ed3b386d49182764b5cf4681\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\4e7e34eabcb74dbaea8dbe85ff15678f\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\9c5b7ce451b594463c261bcaf72d7a48\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\c97eda821fef0d25c8a1780c0ef989ad\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\0ffaa6e0e813b0b3350f4b26426e1a36\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] C:\Users\Chinazo\.gradle\caches\transforms-3\45585e257d21b6662a83467c8936add0\transformed\exifinterface-1.3.3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\0180d28b2018df4977c5fe285d8e9a3d\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.dagger:dagger-lint-aar:2.39] C:\Users\Chinazo\.gradle\caches\transforms-3\803ff77b3c1a1baaf57b8ac53a25142e\transformed\dagger-lint-aar-2.39\AndroidManifest.xml:16:1-19:12
+MERGED from [io.grpc:grpc-android:1.44.1] C:\Users\Chinazo\.gradle\caches\transforms-3\121de20c902a9c10b11d2e92a7f8d8b4\transformed\grpc-android-1.44.1\AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\e5e4ab0672876f90cb3fce5592ddb9ca\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
+INJECTED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml:2:1-31:12
+	package
+		ADDED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml:4:5-36
+		INJECTED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml:2:1-31:12
+		INJECTED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml:2:1-31:12
+		INJECTED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml:5:5-66
+MERGED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\9dfc58995df1b755dab198d4bae6a4ff\transformed\firebase-auth-21.0.6\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\9dfc58995df1b755dab198d4bae6a4ff\transformed\firebase-auth-21.0.6\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.2.1] C:\Users\Chinazo\.gradle\caches\transforms-3\efdef9386b4146efcdd9347d5a99656a\transformed\firebase-firestore-24.2.1\AndroidManifest.xml:14:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.2.1] C:\Users\Chinazo\.gradle\caches\transforms-3\efdef9386b4146efcdd9347d5a99656a\transformed\firebase-firestore-24.2.1\AndroidManifest.xml:14:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\a9e4690ce8d346c82e3c1f21adc0761c\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\a9e4690ce8d346c82e3c1f21adc0761c\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\6bd77388a965bfc7d228f49dd72c6636\transformed\firebase-installations-17.0.1\AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\6bd77388a965bfc7d228f49dd72c6636\transformed\firebase-installations-17.0.1\AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\27f784e836fa2cd6e3a2b1a22a6602d9\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\27f784e836fa2cd6e3a2b1a22a6602d9\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\2514ca58d58bb2fd6cfe85027fcb84ec\transformed\play-services-measurement-impl-21.1.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\2514ca58d58bb2fd6cfe85027fcb84ec\transformed\play-services-measurement-impl-21.1.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\16f8c4edcaa36b6c3f66b16d937dcf64\transformed\play-services-measurement-sdk-api-21.1.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\16f8c4edcaa36b6c3f66b16d937dcf64\transformed\play-services-measurement-sdk-api-21.1.0\AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml:5:22-64
+application
+ADDED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml:7:5-29:19
+MERGED from [androidx.compose.ui:ui-tooling:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\b8d56d02f1476e6c474d361bbf3ee67e\transformed\ui-tooling-1.1.0-beta01\AndroidManifest.xml:24:5-28:19
+MERGED from [androidx.compose.ui:ui-tooling:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\b8d56d02f1476e6c474d361bbf3ee67e\transformed\ui-tooling-1.1.0-beta01\AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.android.material:material:1.6.1] C:\Users\Chinazo\.gradle\caches\transforms-3\30688d796cf24d5e762f69d80a4ee677\transformed\material-1.6.1\AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.material:material:1.6.1] C:\Users\Chinazo\.gradle\caches\transforms-3\30688d796cf24d5e762f69d80a4ee677\transformed\material-1.6.1\AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services-auth:20.2.0] C:\Users\Chinazo\.gradle\caches\transforms-3\3fc4d7a81bc758500c104ebb75d743fe\transformed\play-services-auth-20.2.0\AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.gms:play-services-auth:20.2.0] C:\Users\Chinazo\.gradle\caches\transforms-3\3fc4d7a81bc758500c104ebb75d743fe\transformed\play-services-auth-20.2.0\AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.firebase:firebase-auth-ktx:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\a83b6fff7a2e3f625d99ebd4844bfeb8\transformed\firebase-auth-ktx-21.0.6\AndroidManifest.xml:7:5-15:19
+MERGED from [com.google.firebase:firebase-auth-ktx:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\a83b6fff7a2e3f625d99ebd4844bfeb8\transformed\firebase-auth-ktx-21.0.6\AndroidManifest.xml:7:5-15:19
+MERGED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\9dfc58995df1b755dab198d4bae6a4ff\transformed\firebase-auth-21.0.6\AndroidManifest.xml:26:5-71:19
+MERGED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\9dfc58995df1b755dab198d4bae6a4ff\transformed\firebase-auth-21.0.6\AndroidManifest.xml:26:5-71:19
+MERGED from [com.google.firebase:firebase-firestore:24.2.1] C:\Users\Chinazo\.gradle\caches\transforms-3\efdef9386b4146efcdd9347d5a99656a\transformed\firebase-firestore-24.2.1\AndroidManifest.xml:16:5-24:19
+MERGED from [com.google.firebase:firebase-firestore:24.2.1] C:\Users\Chinazo\.gradle\caches\transforms-3\efdef9386b4146efcdd9347d5a99656a\transformed\firebase-firestore-24.2.1\AndroidManifest.xml:16:5-24:19
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\79eb3552a7290deb3de631f20015d42c\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\79eb3552a7290deb3de631f20015d42c\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\e24247c817b1659c4cfd608066c1f158\transformed\firebase-appcheck-interop-16.0.0\AndroidManifest.xml:24:5-20
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\e24247c817b1659c4cfd608066c1f158\transformed\firebase-appcheck-interop-16.0.0\AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\3294ff3e9aa38cff35cbce4dead4cdd5\transformed\play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\3294ff3e9aa38cff35cbce4dead4cdd5\transformed\play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\b854fcbd315eee2d744af3badec4a041\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\b854fcbd315eee2d744af3badec4a041\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-analytics-ktx:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\61ed9b4ef59bc8e4aa3d9f4516997f85\transformed\firebase-analytics-ktx-21.1.0\AndroidManifest.xml:7:5-15:19
+MERGED from [com.google.firebase:firebase-analytics-ktx:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\61ed9b4ef59bc8e4aa3d9f4516997f85\transformed\firebase-analytics-ktx-21.1.0\AndroidManifest.xml:7:5-15:19
+MERGED from [com.google.firebase:firebase-common-ktx:20.1.1] C:\Users\Chinazo\.gradle\caches\transforms-3\95afeb846341d48c0b25c333305069f8\transformed\firebase-common-ktx-20.1.1\AndroidManifest.xml:11:5-19:19
+MERGED from [com.google.firebase:firebase-common-ktx:20.1.1] C:\Users\Chinazo\.gradle\caches\transforms-3\95afeb846341d48c0b25c333305069f8\transformed\firebase-common-ktx-20.1.1\AndroidManifest.xml:11:5-19:19
+MERGED from [com.google.firebase:firebase-analytics:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\03f6a1cc06d5355688e782810aaab7ac\transformed\firebase-analytics-21.1.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\03f6a1cc06d5355688e782810aaab7ac\transformed\firebase-analytics-21.1.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\a9e4690ce8d346c82e3c1f21adc0761c\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:27:5-35:19
+MERGED from [com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\a9e4690ce8d346c82e3c1f21adc0761c\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:27:5-35:19
+MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\6bd77388a965bfc7d228f49dd72c6636\transformed\firebase-installations-17.0.1\AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\6bd77388a965bfc7d228f49dd72c6636\transformed\firebase-installations-17.0.1\AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.firebase:firebase-common:20.1.1] C:\Users\Chinazo\.gradle\caches\transforms-3\1d20f0db56f1a45b9a749e91dd497c3f\transformed\firebase-common-20.1.1\AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.firebase:firebase-common:20.1.1] C:\Users\Chinazo\.gradle\caches\transforms-3\1d20f0db56f1a45b9a749e91dd497c3f\transformed\firebase-common-20.1.1\AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\946a71c8973b06f1915280d14e8e564c\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\946a71c8973b06f1915280d14e8e564c\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\27f784e836fa2cd6e3a2b1a22a6602d9\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:28:5-44:19
+MERGED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\27f784e836fa2cd6e3a2b1a22a6602d9\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:28:5-44:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\2c51fcf9123dd2521475719a688c041c\transformed\play-services-measurement-sdk-21.1.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\2c51fcf9123dd2521475719a688c041c\transformed\play-services-measurement-sdk-21.1.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\2514ca58d58bb2fd6cfe85027fcb84ec\transformed\play-services-measurement-impl-21.1.0\AndroidManifest.xml:29:5-30:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\2514ca58d58bb2fd6cfe85027fcb84ec\transformed\play-services-measurement-impl-21.1.0\AndroidManifest.xml:29:5-30:19
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\2fc314772080ef2ca40d3e2958a7c368\transformed\play-services-ads-identifier-18.0.0\AndroidManifest.xml:25:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\2fc314772080ef2ca40d3e2958a7c368\transformed\play-services-ads-identifier-18.0.0\AndroidManifest.xml:25:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\c7b2b27b4e7a387a1666fe07a89cb951\transformed\play-services-measurement-base-21.1.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\c7b2b27b4e7a387a1666fe07a89cb951\transformed\play-services-measurement-base-21.1.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\Chinazo\.gradle\caches\transforms-3\cf0a40d7dfc716f24300df4fd1d8239d\transformed\play-services-stats-17.0.2\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\Chinazo\.gradle\caches\transforms-3\cf0a40d7dfc716f24300df4fd1d8239d\transformed\play-services-stats-17.0.2\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\8e7a25a2f730fb0e2eeb3ad3a038432e\transformed\firebase-measurement-connector-19.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\8e7a25a2f730fb0e2eeb3ad3a038432e\transformed\firebase-measurement-connector-19.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\dd145f8f847abcf7319d8392b265562a\transformed\play-services-basement-18.0.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\dd145f8f847abcf7319d8392b265562a\transformed\play-services-basement-18.0.0\AndroidManifest.xml:20:5-24:19
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\c0d11136582adf62d62f202659c47411\transformed\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\c0d11136582adf62d62f202659c47411\transformed\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
+MERGED from [androidx.compose.ui:ui-test-manifest:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\0370727729f6e7fd826386d6850e528b\transformed\ui-test-manifest-1.1.0-beta01\AndroidManifest.xml:24:5-28:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\0370727729f6e7fd826386d6850e528b\transformed\ui-test-manifest-1.1.0-beta01\AndroidManifest.xml:24:5-28:19
+MERGED from [androidx.core:core:1.8.0] C:\Users\Chinazo\.gradle\caches\transforms-3\575acd4e1c679c2761bc8372e7534631\transformed\core-1.8.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.8.0] C:\Users\Chinazo\.gradle\caches\transforms-3\575acd4e1c679c2761bc8372e7534631\transformed\core-1.8.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.profileinstaller:profileinstaller:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\35724067d3c9152eb6c33ae1744ef65c\transformed\profileinstaller-1.1.0-beta01\AndroidManifest.xml:25:5-46:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\35724067d3c9152eb6c33ae1744ef65c\transformed\profileinstaller-1.1.0-beta01\AndroidManifest.xml:25:5-46:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Chinazo\.gradle\caches\transforms-3\bfef41e43c87077d03ea87f506f07687\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Chinazo\.gradle\caches\transforms-3\bfef41e43c87077d03ea87f506f07687\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\c4c66794ba550cd06f4dade3780ca28a\transformed\startup-runtime-1.0.0\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\c4c66794ba550cd06f4dade3780ca28a\transformed\startup-runtime-1.0.0\AndroidManifest.xml:25:5-31:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.8.0] C:\Users\Chinazo\.gradle\caches\transforms-3\575acd4e1c679c2761bc8372e7534631\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml:15:9-35
+	android:label
+		ADDED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml:13:9-41
+	android:fullBackupContent
+		ADDED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml:11:9-54
+	android:roundIcon
+		ADDED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml:14:9-54
+	tools:targetApi
+		ADDED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml:17:9-29
+	android:icon
+		ADDED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml:12:9-43
+	android:allowBackup
+		ADDED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml:9:9-35
+	android:theme
+		ADDED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml:16:9-46
+	android:dataExtractionRules
+		ADDED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml:10:9-65
+	android:name
+		ADDED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml:8:9-44
+activity#com.eastream.eastream.MainActivity
+ADDED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml:18:9-28:20
+	android:label
+		ADDED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml:21:13-45
+	android:exported
+		ADDED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml:20:13-36
+	android:theme
+		ADDED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml:22:13-50
+	android:name
+		ADDED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml:19:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml:23:13-27:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml:24:17-69
+	android:name
+		ADDED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml:24:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml:26:17-77
+	android:name
+		ADDED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml:26:27-74
+uses-sdk
+INJECTED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml
+MERGED from [androidx.compose.ui:ui-tooling:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\b8d56d02f1476e6c474d361bbf3ee67e\transformed\ui-tooling-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-tooling:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\b8d56d02f1476e6c474d361bbf3ee67e\transformed\ui-tooling-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.material:material:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\1f79a04e6bd97c11745ab8f2b0bd2473\transformed\material-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.material:material:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\1f79a04e6bd97c11745ab8f2b0bd2473\transformed\material-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [io.coil-kt:coil-compose:1.4.0] C:\Users\Chinazo\.gradle\caches\transforms-3\73445683e7a09034f7b317c0367592d1\transformed\coil-compose-1.4.0\AndroidManifest.xml:5:5-7:41
+MERGED from [io.coil-kt:coil-compose:1.4.0] C:\Users\Chinazo\.gradle\caches\transforms-3\73445683e7a09034f7b317c0367592d1\transformed\coil-compose-1.4.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.hilt:hilt-navigation-compose:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\353889b2b6cb04c1f22468382b9bc9b1\transformed\hilt-navigation-compose-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.hilt:hilt-navigation-compose:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\353889b2b6cb04c1f22468382b9bc9b1\transformed\hilt-navigation-compose-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-compose:2.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\bc0be349a4feffed78427f82f698177e\transformed\navigation-compose-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-compose:2.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\bc0be349a4feffed78427f82f698177e\transformed\navigation-compose-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\fdff705ce8c632667c1118bade441b2f\transformed\lifecycle-viewmodel-compose-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\fdff705ce8c632667c1118bade441b2f\transformed\lifecycle-viewmodel-compose-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-tooling-data:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\9af6a0750d35817ffd61c808d46c833e\transformed\ui-tooling-data-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-tooling-data:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\9af6a0750d35817ffd61c808d46c833e\transformed\ui-tooling-data-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.material:material-ripple:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\b6d70b2803be8f69024e435ef23ce48d\transformed\material-ripple-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.material:material-ripple:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\b6d70b2803be8f69024e435ef23ce48d\transformed\material-ripple-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.foundation:foundation:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\92f125e5fb33d96aec162d92e69f19f2\transformed\foundation-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.foundation:foundation:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\92f125e5fb33d96aec162d92e69f19f2\transformed\foundation-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.animation:animation:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\b7477ed1bf0d4b2e1244ebbbb82e4e61\transformed\animation-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.animation:animation:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\b7477ed1bf0d4b2e1244ebbbb82e4e61\transformed\animation-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.material:material-icons-extended:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\39b1f204acd3b4af87b1ac685656f637\transformed\material-icons-extended-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.material:material-icons-extended:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\39b1f204acd3b4af87b1ac685656f637\transformed\material-icons-extended-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.material:material-icons-core:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\691b445853ed7aa51dea43b75459fbaf\transformed\material-icons-core-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.material:material-icons-core:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\691b445853ed7aa51dea43b75459fbaf\transformed\material-icons-core-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.foundation:foundation-layout:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\a139b275d6793132334093755338279e\transformed\foundation-layout-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.foundation:foundation-layout:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\a139b275d6793132334093755338279e\transformed\foundation-layout-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [io.coil-kt:coil-compose-base:1.4.0] C:\Users\Chinazo\.gradle\caches\transforms-3\d557d5c0a9e75f2ca1138529ff6736da\transformed\coil-compose-base-1.4.0\AndroidManifest.xml:5:5-7:41
+MERGED from [io.coil-kt:coil-compose-base:1.4.0] C:\Users\Chinazo\.gradle\caches\transforms-3\d557d5c0a9e75f2ca1138529ff6736da\transformed\coil-compose-base-1.4.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.activity:activity-compose:1.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\7f63ce7a7bf8466950181622be7070b6\transformed\activity-compose-1.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-compose:1.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\7f63ce7a7bf8466950181622be7070b6\transformed\activity-compose-1.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.animation:animation-core:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\8590171616284643d38574c6a53e989d\transformed\animation-core-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.animation:animation-core:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\8590171616284643d38574c6a53e989d\transformed\animation-core-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.19.0] C:\Users\Chinazo\.gradle\caches\transforms-3\3daa45602a754e3be32eb5b35ccb2c76\transformed\accompanist-drawablepainter-0.19.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.19.0] C:\Users\Chinazo\.gradle\caches\transforms-3\3daa45602a754e3be32eb5b35ccb2c76\transformed\accompanist-drawablepainter-0.19.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\03016554e1b9aa077e4c08c592ab5e8d\transformed\ui-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\03016554e1b9aa077e4c08c592ab5e8d\transformed\ui-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\7c3a1c84f75c6500b8dd48191f2562a0\transformed\navigation-runtime-ktx-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\7c3a1c84f75c6500b8dd48191f2562a0\transformed\navigation-runtime-ktx-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.hilt:hilt-navigation:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\782560e3dd55680a8c387dbded675e0d\transformed\hilt-navigation-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.hilt:hilt-navigation:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\782560e3dd55680a8c387dbded675e0d\transformed\hilt-navigation-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\1e1ab31b5ebc34edfbef23a787fe548f\transformed\navigation-runtime-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\1e1ab31b5ebc34edfbef23a787fe548f\transformed\navigation-runtime-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common-ktx:2.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\f85b589afd304810afc5d4d585e3de90\transformed\navigation-common-ktx-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common-ktx:2.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\f85b589afd304810afc5d4d585e3de90\transformed\navigation-common-ktx-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\78448b5bf7a94ad52eabaa7aba4261d4\transformed\navigation-common-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\78448b5bf7a94ad52eabaa7aba4261d4\transformed\navigation-common-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\2f11072e712654db33a03d8f41d75c69\transformed\activity-ktx-1.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\2f11072e712654db33a03d8f41d75c69\transformed\activity-ktx-1.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\edcbbe4dd5741b105635c86c07119c43\transformed\lifecycle-runtime-ktx-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\edcbbe4dd5741b105635c86c07119c43\transformed\lifecycle-runtime-ktx-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\5ebc16b8e8fd4d39e0286550057aa9ba\transformed\lifecycle-viewmodel-ktx-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\5ebc16b8e8fd4d39e0286550057aa9ba\transformed\lifecycle-viewmodel-ktx-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-tooling-preview:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\4b769b2dc7d2eb0e1c2423854c85253d\transformed\ui-tooling-preview-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-tooling-preview:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\4b769b2dc7d2eb0e1c2423854c85253d\transformed\ui-tooling-preview-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-text:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\3c36e601e9fd3a20b4b263b7e5460ec2\transformed\ui-text-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-text:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\3c36e601e9fd3a20b4b263b7e5460ec2\transformed\ui-text-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.runtime:runtime-saveable:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\8b170f42cc346b7eda187b2226016b3f\transformed\runtime-saveable-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.runtime:runtime-saveable:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\8b170f42cc346b7eda187b2226016b3f\transformed\runtime-saveable-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-graphics:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\0c4ce4018c156b87d91052635343750e\transformed\ui-graphics-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-graphics:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\0c4ce4018c156b87d91052635343750e\transformed\ui-graphics-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-unit:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\8e71336306a344976affe9747ab58240\transformed\ui-unit-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-unit:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\8e71336306a344976affe9747ab58240\transformed\ui-unit-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-geometry:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\8f581e2c5743f36baf8aa065652a3913\transformed\ui-geometry-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-geometry:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\8f581e2c5743f36baf8aa065652a3913\transformed\ui-geometry-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.runtime:runtime:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\4e15fae513a8ee274f56685afb289e9f\transformed\runtime-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.runtime:runtime:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\4e15fae513a8ee274f56685afb289e9f\transformed\runtime-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03] C:\Users\Chinazo\.gradle\caches\transforms-3\85014c216fee53c580582ede8286e18b\transformed\hilt-lifecycle-viewmodel-1.0.0-alpha03\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03] C:\Users\Chinazo\.gradle\caches\transforms-3\85014c216fee53c580582ede8286e18b\transformed\hilt-lifecycle-viewmodel-1.0.0-alpha03\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.dagger:hilt-android:2.39] C:\Users\Chinazo\.gradle\caches\transforms-3\136d91cd4da22a618134b6f8f1cdb619\transformed\hilt-android-2.39\AndroidManifest.xml:18:3-42
+MERGED from [com.google.dagger:hilt-android:2.39] C:\Users\Chinazo\.gradle\caches\transforms-3\136d91cd4da22a618134b6f8f1cdb619\transformed\hilt-android-2.39\AndroidManifest.xml:18:3-42
+MERGED from [com.google.android.material:material:1.6.1] C:\Users\Chinazo\.gradle\caches\transforms-3\30688d796cf24d5e762f69d80a4ee677\transformed\material-1.6.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.6.1] C:\Users\Chinazo\.gradle\caches\transforms-3\30688d796cf24d5e762f69d80a4ee677\transformed\material-1.6.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-auth:20.2.0] C:\Users\Chinazo\.gradle\caches\transforms-3\3fc4d7a81bc758500c104ebb75d743fe\transformed\play-services-auth-20.2.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:20.2.0] C:\Users\Chinazo\.gradle\caches\transforms-3\3fc4d7a81bc758500c104ebb75d743fe\transformed\play-services-auth-20.2.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth-ktx:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\a83b6fff7a2e3f625d99ebd4844bfeb8\transformed\firebase-auth-ktx-21.0.6\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-ktx:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\a83b6fff7a2e3f625d99ebd4844bfeb8\transformed\firebase-auth-ktx-21.0.6\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\9dfc58995df1b755dab198d4bae6a4ff\transformed\firebase-auth-21.0.6\AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\9dfc58995df1b755dab198d4bae6a4ff\transformed\firebase-auth-21.0.6\AndroidManifest.xml:21:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\6968a3e9889a8a6f78654e81f9c1e1a6\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\6968a3e9889a8a6f78654e81f9c1e1a6\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-firestore:24.2.1] C:\Users\Chinazo\.gradle\caches\transforms-3\efdef9386b4146efcdd9347d5a99656a\transformed\firebase-firestore-24.2.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-firestore:24.2.1] C:\Users\Chinazo\.gradle\caches\transforms-3\efdef9386b4146efcdd9347d5a99656a\transformed\firebase-firestore-24.2.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\5667f463bfac461f221eec086554fca8\transformed\play-services-auth-api-phone-18.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\5667f463bfac461f221eec086554fca8\transformed\play-services-auth-api-phone-18.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\2dbe35d36fac21506b2508ad0a455ea7\transformed\play-services-auth-base-18.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\2dbe35d36fac21506b2508ad0a455ea7\transformed\play-services-auth-base-18.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\79eb3552a7290deb3de631f20015d42c\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\79eb3552a7290deb3de631f20015d42c\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\e24247c817b1659c4cfd608066c1f158\transformed\firebase-appcheck-interop-16.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\e24247c817b1659c4cfd608066c1f158\transformed\firebase-appcheck-interop-16.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\0e0ff95879c785bdd38cccd1b2736c98\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\0e0ff95879c785bdd38cccd1b2736c98\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\3294ff3e9aa38cff35cbce4dead4cdd5\transformed\play-services-base-18.0.1\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\3294ff3e9aa38cff35cbce4dead4cdd5\transformed\play-services-base-18.0.1\AndroidManifest.xml:18:5-43
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\b854fcbd315eee2d744af3badec4a041\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\b854fcbd315eee2d744af3badec4a041\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics-ktx:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\61ed9b4ef59bc8e4aa3d9f4516997f85\transformed\firebase-analytics-ktx-21.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics-ktx:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\61ed9b4ef59bc8e4aa3d9f4516997f85\transformed\firebase-analytics-ktx-21.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common-ktx:20.1.1] C:\Users\Chinazo\.gradle\caches\transforms-3\95afeb846341d48c0b25c333305069f8\transformed\firebase-common-ktx-20.1.1\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common-ktx:20.1.1] C:\Users\Chinazo\.gradle\caches\transforms-3\95afeb846341d48c0b25c333305069f8\transformed\firebase-common-ktx-20.1.1\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-analytics:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\03f6a1cc06d5355688e782810aaab7ac\transformed\firebase-analytics-21.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\03f6a1cc06d5355688e782810aaab7ac\transformed\firebase-analytics-21.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\a9e4690ce8d346c82e3c1f21adc0761c\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\a9e4690ce8d346c82e3c1f21adc0761c\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\6bd77388a965bfc7d228f49dd72c6636\transformed\firebase-installations-17.0.1\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\6bd77388a965bfc7d228f49dd72c6636\transformed\firebase-installations-17.0.1\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:20.1.1] C:\Users\Chinazo\.gradle\caches\transforms-3\1d20f0db56f1a45b9a749e91dd497c3f\transformed\firebase-common-20.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-common:20.1.1] C:\Users\Chinazo\.gradle\caches\transforms-3\1d20f0db56f1a45b9a749e91dd497c3f\transformed\firebase-common-20.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\e8c3f18cda5adcbdf000a891229ea56f\transformed\firebase-installations-interop-17.0.1\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\e8c3f18cda5adcbdf000a891229ea56f\transformed\firebase-installations-interop-17.0.1\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\946a71c8973b06f1915280d14e8e564c\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\946a71c8973b06f1915280d14e8e564c\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\27f784e836fa2cd6e3a2b1a22a6602d9\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\27f784e836fa2cd6e3a2b1a22a6602d9\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\2c51fcf9123dd2521475719a688c041c\transformed\play-services-measurement-sdk-21.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\2c51fcf9123dd2521475719a688c041c\transformed\play-services-measurement-sdk-21.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\2514ca58d58bb2fd6cfe85027fcb84ec\transformed\play-services-measurement-impl-21.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\2514ca58d58bb2fd6cfe85027fcb84ec\transformed\play-services-measurement-impl-21.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\2fc314772080ef2ca40d3e2958a7c368\transformed\play-services-ads-identifier-18.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\2fc314772080ef2ca40d3e2958a7c368\transformed\play-services-ads-identifier-18.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\16f8c4edcaa36b6c3f66b16d937dcf64\transformed\play-services-measurement-sdk-api-21.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\16f8c4edcaa36b6c3f66b16d937dcf64\transformed\play-services-measurement-sdk-api-21.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\c7b2b27b4e7a387a1666fe07a89cb951\transformed\play-services-measurement-base-21.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\c7b2b27b4e7a387a1666fe07a89cb951\transformed\play-services-measurement-base-21.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\Chinazo\.gradle\caches\transforms-3\cf0a40d7dfc716f24300df4fd1d8239d\transformed\play-services-stats-17.0.2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\Chinazo\.gradle\caches\transforms-3\cf0a40d7dfc716f24300df4fd1d8239d\transformed\play-services-stats-17.0.2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\8e7a25a2f730fb0e2eeb3ad3a038432e\transformed\firebase-measurement-connector-19.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\8e7a25a2f730fb0e2eeb3ad3a038432e\transformed\firebase-measurement-connector-19.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\dd145f8f847abcf7319d8392b265562a\transformed\play-services-basement-18.0.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\dd145f8f847abcf7319d8392b265562a\transformed\play-services-basement-18.0.0\AndroidManifest.xml:18:5-43
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\c0d11136582adf62d62f202659c47411\transformed\constraintlayout-2.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\c0d11136582adf62d62f202659c47411\transformed\constraintlayout-2.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\Chinazo\.gradle\caches\transforms-3\262641b53a24842a1c45fcdcc8673acc\transformed\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\Chinazo\.gradle\caches\transforms-3\262641b53a24842a1c45fcdcc8673acc\transformed\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.2] C:\Users\Chinazo\.gradle\caches\transforms-3\a13a3ba713c6fc11490055f27c7ccc5e\transformed\fragment-1.3.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.2] C:\Users\Chinazo\.gradle\caches\transforms-3\a13a3ba713c6fc11490055f27c7ccc5e\transformed\fragment-1.3.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\17d242c891a679fa5a05d65e5f16bf0e\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\17d242c891a679fa5a05d65e5f16bf0e\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\138ed46f8f4cc592e307caf075efdd52\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\138ed46f8f4cc592e307caf075efdd52\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\c1c3e15671872a84a34831a746c982a9\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\c1c3e15671872a84a34831a746c982a9\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\0370727729f6e7fd826386d6850e528b\transformed\ui-test-manifest-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-test-manifest:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\0370727729f6e7fd826386d6850e528b\transformed\ui-test-manifest-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\0a4d1ad15dbd6f5025a08aa6a0b010bf\transformed\activity-1.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\0a4d1ad15dbd6f5025a08aa6a0b010bf\transformed\activity-1.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\aed971f7a51caea4d0ab64470f7a719a\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\aed971f7a51caea4d0ab64470f7a719a\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\431fc2405b7c01f9853539fdc5c0296e\transformed\lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\431fc2405b7c01f9853539fdc5c0296e\transformed\lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [io.coil-kt:coil:1.4.0] C:\Users\Chinazo\.gradle\caches\transforms-3\0c736ec91539470db07497efa7b5586a\transformed\coil-1.4.0\AndroidManifest.xml:5:5-7:41
+MERGED from [io.coil-kt:coil:1.4.0] C:\Users\Chinazo\.gradle\caches\transforms-3\0c736ec91539470db07497efa7b5586a\transformed\coil-1.4.0\AndroidManifest.xml:5:5-7:41
+MERGED from [io.coil-kt:coil-base:1.4.0] C:\Users\Chinazo\.gradle\caches\transforms-3\25158fac14ffba19bc15b8a2c315076a\transformed\coil-base-1.4.0\AndroidManifest.xml:5:5-7:41
+MERGED from [io.coil-kt:coil-base:1.4.0] C:\Users\Chinazo\.gradle\caches\transforms-3\25158fac14ffba19bc15b8a2c315076a\transformed\coil-base-1.4.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.8.0] C:\Users\Chinazo\.gradle\caches\transforms-3\cf581cd820d0af5ae303b21f7d608bbb\transformed\core-ktx-1.8.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.8.0] C:\Users\Chinazo\.gradle\caches\transforms-3\cf581cd820d0af5ae303b21f7d608bbb\transformed\core-ktx-1.8.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.compose.ui:ui-util:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\ec0a644a2201dbd9fdb9e9e046b75d2e\transformed\ui-util-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-util:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\ec0a644a2201dbd9fdb9e9e046b75d2e\transformed\ui-util-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.0] C:\Users\Chinazo\.gradle\caches\transforms-3\cfb0a0f70ba645691df43107dd7d032c\transformed\savedstate-ktx-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.0] C:\Users\Chinazo\.gradle\caches\transforms-3\cfb0a0f70ba645691df43107dd7d032c\transformed\savedstate-ktx-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\Chinazo\.gradle\caches\transforms-3\eff7705d7ef48a64d2f3fbefefbc9d28\transformed\savedstate-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\Chinazo\.gradle\caches\transforms-3\eff7705d7ef48a64d2f3fbefefbc9d28\transformed\savedstate-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\e1e47d92adbbcbd424c11871dea4f444\transformed\autofill-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\e1e47d92adbbcbd424c11871dea4f444\transformed\autofill-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\2f2f18c0e4fd8fbef813b3403e07897c\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\2f2f18c0e4fd8fbef813b3403e07897c\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\Chinazo\.gradle\caches\transforms-3\1a777d126f4d167867cfefee25274f49\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\Chinazo\.gradle\caches\transforms-3\1a777d126f4d167867cfefee25274f49\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\Chinazo\.gradle\caches\transforms-3\ab9fe6f0d29a4e59269036ac017ff784\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\Chinazo\.gradle\caches\transforms-3\ab9fe6f0d29a4e59269036ac017ff784\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.1] C:\Users\Chinazo\.gradle\caches\transforms-3\d516a7d5d874bc4c2fc5fa411252e2ea\transformed\appcompat-resources-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.1] C:\Users\Chinazo\.gradle\caches\transforms-3\d516a7d5d874bc4c2fc5fa411252e2ea\transformed\appcompat-resources-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\09f3befb4b4acf020a07ded014bcad68\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\09f3befb4b4acf020a07ded014bcad68\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\66d845cfeb7337cef2952b120959e1a5\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\66d845cfeb7337cef2952b120959e1a5\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.4.0] C:\Users\Chinazo\.gradle\caches\transforms-3\eba6773a2655d38cd9bc0f6b70f44df2\transformed\browser-1.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.4.0] C:\Users\Chinazo\.gradle\caches\transforms-3\eba6773a2655d38cd9bc0f6b70f44df2\transformed\browser-1.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\cfbf115ea44aa46aa86149acc24fad63\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\cfbf115ea44aa46aa86149acc24fad63\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\e9d09e5be1e7162e5b950e44cf1f97d8\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\e9d09e5be1e7162e5b950e44cf1f97d8\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\30d78c41e685ba6363a5ab93fc4ff396\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\30d78c41e685ba6363a5ab93fc4ff396\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.8.0] C:\Users\Chinazo\.gradle\caches\transforms-3\575acd4e1c679c2761bc8372e7534631\transformed\core-1.8.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.8.0] C:\Users\Chinazo\.gradle\caches\transforms-3\575acd4e1c679c2761bc8372e7534631\transformed\core-1.8.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.profileinstaller:profileinstaller:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\35724067d3c9152eb6c33ae1744ef65c\transformed\profileinstaller-1.1.0-beta01\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.profileinstaller:profileinstaller:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\35724067d3c9152eb6c33ae1744ef65c\transformed\profileinstaller-1.1.0-beta01\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\3c720e554707dcec1fe405d64f33cfd6\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\3c720e554707dcec1fe405d64f33cfd6\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\5f0ab28b360972120d493660e0f97e52\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\5f0ab28b360972120d493660e0f97e52\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\c8c9b14d108379846a2fa4cd6dc0a3d1\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\c8c9b14d108379846a2fa4cd6dc0a3d1\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\f5295d0c2a72a8b5e74dc1e2fc9ee626\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\f5295d0c2a72a8b5e74dc1e2fc9ee626\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\0811cc9cfcb34e2c7a5858d9a93e329e\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\0811cc9cfcb34e2c7a5858d9a93e329e\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\5fbd3594ec4967a6216b932498312fe7\transformed\firebase-components-17.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\5fbd3594ec4967a6216b932498312fe7\transformed\firebase-components-17.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Chinazo\.gradle\caches\transforms-3\bfef41e43c87077d03ea87f506f07687\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Chinazo\.gradle\caches\transforms-3\bfef41e43c87077d03ea87f506f07687\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\c4c66794ba550cd06f4dade3780ca28a\transformed\startup-runtime-1.0.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\c4c66794ba550cd06f4dade3780ca28a\transformed\startup-runtime-1.0.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\cdf6653f5fe3958283cfe59237b0760a\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\cdf6653f5fe3958283cfe59237b0760a\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\c8df1803ed3b386d49182764b5cf4681\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\c8df1803ed3b386d49182764b5cf4681\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\4e7e34eabcb74dbaea8dbe85ff15678f\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\4e7e34eabcb74dbaea8dbe85ff15678f\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\9c5b7ce451b594463c261bcaf72d7a48\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\9c5b7ce451b594463c261bcaf72d7a48\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\c97eda821fef0d25c8a1780c0ef989ad\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\c97eda821fef0d25c8a1780c0ef989ad\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\0ffaa6e0e813b0b3350f4b26426e1a36\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\0ffaa6e0e813b0b3350f4b26426e1a36\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] C:\Users\Chinazo\.gradle\caches\transforms-3\45585e257d21b6662a83467c8936add0\transformed\exifinterface-1.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] C:\Users\Chinazo\.gradle\caches\transforms-3\45585e257d21b6662a83467c8936add0\transformed\exifinterface-1.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\0180d28b2018df4977c5fe285d8e9a3d\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\0180d28b2018df4977c5fe285d8e9a3d\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.dagger:dagger-lint-aar:2.39] C:\Users\Chinazo\.gradle\caches\transforms-3\803ff77b3c1a1baaf57b8ac53a25142e\transformed\dagger-lint-aar-2.39\AndroidManifest.xml:18:3-42
+MERGED from [com.google.dagger:dagger-lint-aar:2.39] C:\Users\Chinazo\.gradle\caches\transforms-3\803ff77b3c1a1baaf57b8ac53a25142e\transformed\dagger-lint-aar-2.39\AndroidManifest.xml:18:3-42
+MERGED from [io.grpc:grpc-android:1.44.1] C:\Users\Chinazo\.gradle\caches\transforms-3\121de20c902a9c10b11d2e92a7f8d8b4\transformed\grpc-android-1.44.1\AndroidManifest.xml:5:5-7:41
+MERGED from [io.grpc:grpc-android:1.44.1] C:\Users\Chinazo\.gradle\caches\transforms-3\121de20c902a9c10b11d2e92a7f8d8b4\transformed\grpc-android-1.44.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\e5e4ab0672876f90cb3fce5592ddb9ca\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\e5e4ab0672876f90cb3fce5592ddb9ca\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41
+INJECTED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Chinazo\Documents\Ada\Eastream\app\src\main\AndroidManifest.xml
+activity#androidx.compose.ui.tooling.PreviewActivity
+ADDED from [androidx.compose.ui:ui-tooling:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\b8d56d02f1476e6c474d361bbf3ee67e\transformed\ui-tooling-1.1.0-beta01\AndroidManifest.xml:25:9-27:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-tooling:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\b8d56d02f1476e6c474d361bbf3ee67e\transformed\ui-tooling-1.1.0-beta01\AndroidManifest.xml:27:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-tooling:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\b8d56d02f1476e6c474d361bbf3ee67e\transformed\ui-tooling-1.1.0-beta01\AndroidManifest.xml:26:13-71
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:20.2.0] C:\Users\Chinazo\.gradle\caches\transforms-3\3fc4d7a81bc758500c104ebb75d743fe\transformed\play-services-auth-20.2.0\AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:20.2.0] C:\Users\Chinazo\.gradle\caches\transforms-3\3fc4d7a81bc758500c104ebb75d743fe\transformed\play-services-auth-20.2.0\AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:20.2.0] C:\Users\Chinazo\.gradle\caches\transforms-3\3fc4d7a81bc758500c104ebb75d743fe\transformed\play-services-auth-20.2.0\AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:20.2.0] C:\Users\Chinazo\.gradle\caches\transforms-3\3fc4d7a81bc758500c104ebb75d743fe\transformed\play-services-auth-20.2.0\AndroidManifest.xml:27:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:20.2.0] C:\Users\Chinazo\.gradle\caches\transforms-3\3fc4d7a81bc758500c104ebb75d743fe\transformed\play-services-auth-20.2.0\AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:20.2.0] C:\Users\Chinazo\.gradle\caches\transforms-3\3fc4d7a81bc758500c104ebb75d743fe\transformed\play-services-auth-20.2.0\AndroidManifest.xml:33:9-37:51
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:20.2.0] C:\Users\Chinazo\.gradle\caches\transforms-3\3fc4d7a81bc758500c104ebb75d743fe\transformed\play-services-auth-20.2.0\AndroidManifest.xml:35:13-36
+	android:visibleToInstantApps
+		ADDED from [com.google.android.gms:play-services-auth:20.2.0] C:\Users\Chinazo\.gradle\caches\transforms-3\3fc4d7a81bc758500c104ebb75d743fe\transformed\play-services-auth-20.2.0\AndroidManifest.xml:37:13-48
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:20.2.0] C:\Users\Chinazo\.gradle\caches\transforms-3\3fc4d7a81bc758500c104ebb75d743fe\transformed\play-services-auth-20.2.0\AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:20.2.0] C:\Users\Chinazo\.gradle\caches\transforms-3\3fc4d7a81bc758500c104ebb75d743fe\transformed\play-services-auth-20.2.0\AndroidManifest.xml:34:13-89
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-auth-ktx:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\a83b6fff7a2e3f625d99ebd4844bfeb8\transformed\firebase-auth-ktx-21.0.6\AndroidManifest.xml:8:9-14:19
+MERGED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\9dfc58995df1b755dab198d4bae6a4ff\transformed\firebase-auth-21.0.6\AndroidManifest.xml:64:9-70:19
+MERGED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\9dfc58995df1b755dab198d4bae6a4ff\transformed\firebase-auth-21.0.6\AndroidManifest.xml:64:9-70:19
+MERGED from [com.google.firebase:firebase-firestore:24.2.1] C:\Users\Chinazo\.gradle\caches\transforms-3\efdef9386b4146efcdd9347d5a99656a\transformed\firebase-firestore-24.2.1\AndroidManifest.xml:17:9-23:19
+MERGED from [com.google.firebase:firebase-firestore:24.2.1] C:\Users\Chinazo\.gradle\caches\transforms-3\efdef9386b4146efcdd9347d5a99656a\transformed\firebase-firestore-24.2.1\AndroidManifest.xml:17:9-23:19
+MERGED from [com.google.firebase:firebase-analytics-ktx:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\61ed9b4ef59bc8e4aa3d9f4516997f85\transformed\firebase-analytics-ktx-21.1.0\AndroidManifest.xml:8:9-14:19
+MERGED from [com.google.firebase:firebase-analytics-ktx:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\61ed9b4ef59bc8e4aa3d9f4516997f85\transformed\firebase-analytics-ktx-21.1.0\AndroidManifest.xml:8:9-14:19
+MERGED from [com.google.firebase:firebase-common-ktx:20.1.1] C:\Users\Chinazo\.gradle\caches\transforms-3\95afeb846341d48c0b25c333305069f8\transformed\firebase-common-ktx-20.1.1\AndroidManifest.xml:12:9-18:19
+MERGED from [com.google.firebase:firebase-common-ktx:20.1.1] C:\Users\Chinazo\.gradle\caches\transforms-3\95afeb846341d48c0b25c333305069f8\transformed\firebase-common-ktx-20.1.1\AndroidManifest.xml:12:9-18:19
+MERGED from [com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\a9e4690ce8d346c82e3c1f21adc0761c\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:28:9-34:19
+MERGED from [com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\a9e4690ce8d346c82e3c1f21adc0761c\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:28:9-34:19
+MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\6bd77388a965bfc7d228f49dd72c6636\transformed\firebase-installations-17.0.1\AndroidManifest.xml:15:9-21:19
+MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\6bd77388a965bfc7d228f49dd72c6636\transformed\firebase-installations-17.0.1\AndroidManifest.xml:15:9-21:19
+MERGED from [com.google.firebase:firebase-common:20.1.1] C:\Users\Chinazo\.gradle\caches\transforms-3\1d20f0db56f1a45b9a749e91dd497c3f\transformed\firebase-common-20.1.1\AndroidManifest.xml:33:9-37:35
+MERGED from [com.google.firebase:firebase-common:20.1.1] C:\Users\Chinazo\.gradle\caches\transforms-3\1d20f0db56f1a45b9a749e91dd497c3f\transformed\firebase-common-20.1.1\AndroidManifest.xml:33:9-37:35
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth-ktx:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\a83b6fff7a2e3f625d99ebd4844bfeb8\transformed\firebase-auth-ktx-21.0.6\AndroidManifest.xml:10:13-37
+	tools:targetApi
+		ADDED from [com.google.firebase:firebase-common:20.1.1] C:\Users\Chinazo\.gradle\caches\transforms-3\1d20f0db56f1a45b9a749e91dd497c3f\transformed\firebase-common-20.1.1\AndroidManifest.xml:37:13-32
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:20.1.1] C:\Users\Chinazo\.gradle\caches\transforms-3\1d20f0db56f1a45b9a749e91dd497c3f\transformed\firebase-common-20.1.1\AndroidManifest.xml:35:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-auth-ktx:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\a83b6fff7a2e3f625d99ebd4844bfeb8\transformed\firebase-auth-ktx-21.0.6\AndroidManifest.xml:9:13-84
+meta-data#com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthKtxRegistrar
+ADDED from [com.google.firebase:firebase-auth-ktx:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\a83b6fff7a2e3f625d99ebd4844bfeb8\transformed\firebase-auth-ktx-21.0.6\AndroidManifest.xml:11:13-13:85
+	android:value
+		ADDED from [com.google.firebase:firebase-auth-ktx:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\a83b6fff7a2e3f625d99ebd4844bfeb8\transformed\firebase-auth-ktx-21.0.6\AndroidManifest.xml:13:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-auth-ktx:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\a83b6fff7a2e3f625d99ebd4844bfeb8\transformed\firebase-auth-ktx-21.0.6\AndroidManifest.xml:12:17-116
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\9dfc58995df1b755dab198d4bae6a4ff\transformed\firebase-auth-21.0.6\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.2.1] C:\Users\Chinazo\.gradle\caches\transforms-3\efdef9386b4146efcdd9347d5a99656a\transformed\firebase-firestore-24.2.1\AndroidManifest.xml:13:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.2.1] C:\Users\Chinazo\.gradle\caches\transforms-3\efdef9386b4146efcdd9347d5a99656a\transformed\firebase-firestore-24.2.1\AndroidManifest.xml:13:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\a9e4690ce8d346c82e3c1f21adc0761c\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\a9e4690ce8d346c82e3c1f21adc0761c\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\6bd77388a965bfc7d228f49dd72c6636\transformed\firebase-installations-17.0.1\AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\6bd77388a965bfc7d228f49dd72c6636\transformed\firebase-installations-17.0.1\AndroidManifest.xml:10:5-79
+MERGED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\27f784e836fa2cd6e3a2b1a22a6602d9\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\27f784e836fa2cd6e3a2b1a22a6602d9\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\2514ca58d58bb2fd6cfe85027fcb84ec\transformed\play-services-measurement-impl-21.1.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\2514ca58d58bb2fd6cfe85027fcb84ec\transformed\play-services-measurement-impl-21.1.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\16f8c4edcaa36b6c3f66b16d937dcf64\transformed\play-services-measurement-sdk-api-21.1.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\16f8c4edcaa36b6c3f66b16d937dcf64\transformed\play-services-measurement-sdk-api-21.1.0\AndroidManifest.xml:24:5-79
+MERGED from [io.grpc:grpc-android:1.44.1] C:\Users\Chinazo\.gradle\caches\transforms-3\121de20c902a9c10b11d2e92a7f8d8b4\transformed\grpc-android-1.44.1\AndroidManifest.xml:9:5-79
+MERGED from [io.grpc:grpc-android:1.44.1] C:\Users\Chinazo\.gradle\caches\transforms-3\121de20c902a9c10b11d2e92a7f8d8b4\transformed\grpc-android-1.44.1\AndroidManifest.xml:9:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\9dfc58995df1b755dab198d4bae6a4ff\transformed\firebase-auth-21.0.6\AndroidManifest.xml:24:22-76
+activity#com.google.firebase.auth.internal.GenericIdpActivity
+ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\9dfc58995df1b755dab198d4bae6a4ff\transformed\firebase-auth-21.0.6\AndroidManifest.xml:27:9-44:20
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\9dfc58995df1b755dab198d4bae6a4ff\transformed\firebase-auth-21.0.6\AndroidManifest.xml:29:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\9dfc58995df1b755dab198d4bae6a4ff\transformed\firebase-auth-21.0.6\AndroidManifest.xml:31:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\9dfc58995df1b755dab198d4bae6a4ff\transformed\firebase-auth-21.0.6\AndroidManifest.xml:30:13-36
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\9dfc58995df1b755dab198d4bae6a4ff\transformed\firebase-auth-21.0.6\AndroidManifest.xml:32:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\9dfc58995df1b755dab198d4bae6a4ff\transformed\firebase-auth-21.0.6\AndroidManifest.xml:28:13-80
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:genericidp
+ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\9dfc58995df1b755dab198d4bae6a4ff\transformed\firebase-auth-21.0.6\AndroidManifest.xml:33:13-43:29
+action#android.intent.action.VIEW
+ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\9dfc58995df1b755dab198d4bae6a4ff\transformed\firebase-auth-21.0.6\AndroidManifest.xml:34:17-69
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\9dfc58995df1b755dab198d4bae6a4ff\transformed\firebase-auth-21.0.6\AndroidManifest.xml:34:25-66
+category#android.intent.category.DEFAULT
+ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\9dfc58995df1b755dab198d4bae6a4ff\transformed\firebase-auth-21.0.6\AndroidManifest.xml:36:17-76
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\9dfc58995df1b755dab198d4bae6a4ff\transformed\firebase-auth-21.0.6\AndroidManifest.xml:36:27-73
+category#android.intent.category.BROWSABLE
+ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\9dfc58995df1b755dab198d4bae6a4ff\transformed\firebase-auth-21.0.6\AndroidManifest.xml:37:17-78
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\9dfc58995df1b755dab198d4bae6a4ff\transformed\firebase-auth-21.0.6\AndroidManifest.xml:37:27-75
+data
+ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\9dfc58995df1b755dab198d4bae6a4ff\transformed\firebase-auth-21.0.6\AndroidManifest.xml:39:17-42:51
+	android:path
+		ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\9dfc58995df1b755dab198d4bae6a4ff\transformed\firebase-auth-21.0.6\AndroidManifest.xml:41:21-37
+	android:host
+		ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\9dfc58995df1b755dab198d4bae6a4ff\transformed\firebase-auth-21.0.6\AndroidManifest.xml:40:21-49
+	android:scheme
+		ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\9dfc58995df1b755dab198d4bae6a4ff\transformed\firebase-auth-21.0.6\AndroidManifest.xml:42:21-48
+activity#com.google.firebase.auth.internal.RecaptchaActivity
+ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\9dfc58995df1b755dab198d4bae6a4ff\transformed\firebase-auth-21.0.6\AndroidManifest.xml:45:9-62:20
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\9dfc58995df1b755dab198d4bae6a4ff\transformed\firebase-auth-21.0.6\AndroidManifest.xml:47:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\9dfc58995df1b755dab198d4bae6a4ff\transformed\firebase-auth-21.0.6\AndroidManifest.xml:49:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\9dfc58995df1b755dab198d4bae6a4ff\transformed\firebase-auth-21.0.6\AndroidManifest.xml:48:13-36
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\9dfc58995df1b755dab198d4bae6a4ff\transformed\firebase-auth-21.0.6\AndroidManifest.xml:50:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\9dfc58995df1b755dab198d4bae6a4ff\transformed\firebase-auth-21.0.6\AndroidManifest.xml:46:13-79
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:recaptcha
+ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\9dfc58995df1b755dab198d4bae6a4ff\transformed\firebase-auth-21.0.6\AndroidManifest.xml:51:13-61:29
+meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
+ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\9dfc58995df1b755dab198d4bae6a4ff\transformed\firebase-auth-21.0.6\AndroidManifest.xml:67:13-69:85
+	android:value
+		ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\9dfc58995df1b755dab198d4bae6a4ff\transformed\firebase-auth-21.0.6\AndroidManifest.xml:69:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Chinazo\.gradle\caches\transforms-3\9dfc58995df1b755dab198d4bae6a4ff\transformed\firebase-auth-21.0.6\AndroidManifest.xml:68:17-109
+meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
+ADDED from [com.google.firebase:firebase-firestore:24.2.1] C:\Users\Chinazo\.gradle\caches\transforms-3\efdef9386b4146efcdd9347d5a99656a\transformed\firebase-firestore-24.2.1\AndroidManifest.xml:20:13-22:85
+	android:value
+		ADDED from [com.google.firebase:firebase-firestore:24.2.1] C:\Users\Chinazo\.gradle\caches\transforms-3\efdef9386b4146efcdd9347d5a99656a\transformed\firebase-firestore-24.2.1\AndroidManifest.xml:22:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore:24.2.1] C:\Users\Chinazo\.gradle\caches\transforms-3\efdef9386b4146efcdd9347d5a99656a\transformed\firebase-firestore-24.2.1\AndroidManifest.xml:21:17-111
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\3294ff3e9aa38cff35cbce4dead4cdd5\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\3294ff3e9aa38cff35cbce4dead4cdd5\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\3294ff3e9aa38cff35cbce4dead4cdd5\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\3294ff3e9aa38cff35cbce4dead4cdd5\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+meta-data#com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar
+ADDED from [com.google.firebase:firebase-analytics-ktx:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\61ed9b4ef59bc8e4aa3d9f4516997f85\transformed\firebase-analytics-ktx-21.1.0\AndroidManifest.xml:11:13-13:85
+	android:value
+		ADDED from [com.google.firebase:firebase-analytics-ktx:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\61ed9b4ef59bc8e4aa3d9f4516997f85\transformed\firebase-analytics-ktx-21.1.0\AndroidManifest.xml:13:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics-ktx:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\61ed9b4ef59bc8e4aa3d9f4516997f85\transformed\firebase-analytics-ktx-21.1.0\AndroidManifest.xml:12:17-126
+meta-data#com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar
+ADDED from [com.google.firebase:firebase-common-ktx:20.1.1] C:\Users\Chinazo\.gradle\caches\transforms-3\95afeb846341d48c0b25c333305069f8\transformed\firebase-common-ktx-20.1.1\AndroidManifest.xml:15:13-17:85
+	android:value
+		ADDED from [com.google.firebase:firebase-common-ktx:20.1.1] C:\Users\Chinazo\.gradle\caches\transforms-3\95afeb846341d48c0b25c333305069f8\transformed\firebase-common-ktx-20.1.1\AndroidManifest.xml:17:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-common-ktx:20.1.1] C:\Users\Chinazo\.gradle\caches\transforms-3\95afeb846341d48c0b25c333305069f8\transformed\firebase-common-ktx-20.1.1\AndroidManifest.xml:16:17-113
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\a9e4690ce8d346c82e3c1f21adc0761c\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\27f784e836fa2cd6e3a2b1a22a6602d9\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\27f784e836fa2cd6e3a2b1a22a6602d9\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\2514ca58d58bb2fd6cfe85027fcb84ec\transformed\play-services-measurement-impl-21.1.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\2514ca58d58bb2fd6cfe85027fcb84ec\transformed\play-services-measurement-impl-21.1.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\16f8c4edcaa36b6c3f66b16d937dcf64\transformed\play-services-measurement-sdk-api-21.1.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\16f8c4edcaa36b6c3f66b16d937dcf64\transformed\play-services-measurement-sdk-api-21.1.0\AndroidManifest.xml:25:5-68
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\a9e4690ce8d346c82e3c1f21adc0761c\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:24:22-65
+uses-permission#com.google.android.gms.permission.AD_ID
+ADDED from [com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\a9e4690ce8d346c82e3c1f21adc0761c\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\2514ca58d58bb2fd6cfe85027fcb84ec\transformed\play-services-measurement-impl-21.1.0\AndroidManifest.xml:27:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\2514ca58d58bb2fd6cfe85027fcb84ec\transformed\play-services-measurement-impl-21.1.0\AndroidManifest.xml:27:5-79
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\2fc314772080ef2ca40d3e2958a7c368\transformed\play-services-ads-identifier-18.0.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\2fc314772080ef2ca40d3e2958a7c368\transformed\play-services-ads-identifier-18.0.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\16f8c4edcaa36b6c3f66b16d937dcf64\transformed\play-services-measurement-sdk-api-21.1.0\AndroidManifest.xml:26:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\16f8c4edcaa36b6c3f66b16d937dcf64\transformed\play-services-measurement-sdk-api-21.1.0\AndroidManifest.xml:26:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\a9e4690ce8d346c82e3c1f21adc0761c\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:25:22-76
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\a9e4690ce8d346c82e3c1f21adc0761c\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:31:13-33:85
+	android:value
+		ADDED from [com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\a9e4690ce8d346c82e3c1f21adc0761c\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:33:17-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\a9e4690ce8d346c82e3c1f21adc0761c\transformed\play-services-measurement-api-21.1.0\AndroidManifest.xml:32:17-139
+meta-data#com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar
+ADDED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\6bd77388a965bfc7d228f49dd72c6636\transformed\firebase-installations-17.0.1\AndroidManifest.xml:18:13-20:85
+	android:value
+		ADDED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\6bd77388a965bfc7d228f49dd72c6636\transformed\firebase-installations-17.0.1\AndroidManifest.xml:20:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\Chinazo\.gradle\caches\transforms-3\6bd77388a965bfc7d228f49dd72c6636\transformed\firebase-installations-17.0.1\AndroidManifest.xml:19:17-127
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:20.1.1] C:\Users\Chinazo\.gradle\caches\transforms-3\1d20f0db56f1a45b9a749e91dd497c3f\transformed\firebase-common-20.1.1\AndroidManifest.xml:26:9-31:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:20.1.1] C:\Users\Chinazo\.gradle\caches\transforms-3\1d20f0db56f1a45b9a749e91dd497c3f\transformed\firebase-common-20.1.1\AndroidManifest.xml:28:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:20.1.1] C:\Users\Chinazo\.gradle\caches\transforms-3\1d20f0db56f1a45b9a749e91dd497c3f\transformed\firebase-common-20.1.1\AndroidManifest.xml:30:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:20.1.1] C:\Users\Chinazo\.gradle\caches\transforms-3\1d20f0db56f1a45b9a749e91dd497c3f\transformed\firebase-common-20.1.1\AndroidManifest.xml:29:13-43
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:20.1.1] C:\Users\Chinazo\.gradle\caches\transforms-3\1d20f0db56f1a45b9a749e91dd497c3f\transformed\firebase-common-20.1.1\AndroidManifest.xml:31:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:20.1.1] C:\Users\Chinazo\.gradle\caches\transforms-3\1d20f0db56f1a45b9a749e91dd497c3f\transformed\firebase-common-20.1.1\AndroidManifest.xml:27:13-77
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\27f784e836fa2cd6e3a2b1a22a6602d9\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\2514ca58d58bb2fd6cfe85027fcb84ec\transformed\play-services-measurement-impl-21.1.0\AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\2514ca58d58bb2fd6cfe85027fcb84ec\transformed\play-services-measurement-impl-21.1.0\AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\27f784e836fa2cd6e3a2b1a22a6602d9\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\27f784e836fa2cd6e3a2b1a22a6602d9\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\27f784e836fa2cd6e3a2b1a22a6602d9\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\27f784e836fa2cd6e3a2b1a22a6602d9\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\27f784e836fa2cd6e3a2b1a22a6602d9\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:30:13-85
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\27f784e836fa2cd6e3a2b1a22a6602d9\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:35:9-38:40
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\27f784e836fa2cd6e3a2b1a22a6602d9\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\27f784e836fa2cd6e3a2b1a22a6602d9\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:38:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\27f784e836fa2cd6e3a2b1a22a6602d9\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:36:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\27f784e836fa2cd6e3a2b1a22a6602d9\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:39:9-43:72
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\27f784e836fa2cd6e3a2b1a22a6602d9\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:41:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\27f784e836fa2cd6e3a2b1a22a6602d9\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:42:13-37
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\27f784e836fa2cd6e3a2b1a22a6602d9\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:43:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:21.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\27f784e836fa2cd6e3a2b1a22a6602d9\transformed\play-services-measurement-21.1.0\AndroidManifest.xml:40:13-87
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\dd145f8f847abcf7319d8392b265562a\transformed\play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\dd145f8f847abcf7319d8392b265562a\transformed\play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\dd145f8f847abcf7319d8392b265562a\transformed\play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+activity#androidx.activity.ComponentActivity
+ADDED from [androidx.compose.ui:ui-test-manifest:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\0370727729f6e7fd826386d6850e528b\transformed\ui-test-manifest-1.1.0-beta01\AndroidManifest.xml:25:9-27:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\0370727729f6e7fd826386d6850e528b\transformed\ui-test-manifest-1.1.0-beta01\AndroidManifest.xml:27:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\0370727729f6e7fd826386d6850e528b\transformed\ui-test-manifest-1.1.0-beta01\AndroidManifest.xml:26:13-63
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.profileinstaller:profileinstaller:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\35724067d3c9152eb6c33ae1744ef65c\transformed\profileinstaller-1.1.0-beta01\AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\c4c66794ba550cd06f4dade3780ca28a\transformed\startup-runtime-1.0.0\AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\c4c66794ba550cd06f4dade3780ca28a\transformed\startup-runtime-1.0.0\AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.profileinstaller:profileinstaller:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\35724067d3c9152eb6c33ae1744ef65c\transformed\profileinstaller-1.1.0-beta01\AndroidManifest.xml:30:13-31
+	android:authorities
+		ADDED from [androidx.profileinstaller:profileinstaller:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\35724067d3c9152eb6c33ae1744ef65c\transformed\profileinstaller-1.1.0-beta01\AndroidManifest.xml:28:13-68
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\35724067d3c9152eb6c33ae1744ef65c\transformed\profileinstaller-1.1.0-beta01\AndroidManifest.xml:29:13-37
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\35724067d3c9152eb6c33ae1744ef65c\transformed\profileinstaller-1.1.0-beta01\AndroidManifest.xml:27:13-67
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\35724067d3c9152eb6c33ae1744ef65c\transformed\profileinstaller-1.1.0-beta01\AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\35724067d3c9152eb6c33ae1744ef65c\transformed\profileinstaller-1.1.0-beta01\AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\35724067d3c9152eb6c33ae1744ef65c\transformed\profileinstaller-1.1.0-beta01\AndroidManifest.xml:32:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\35724067d3c9152eb6c33ae1744ef65c\transformed\profileinstaller-1.1.0-beta01\AndroidManifest.xml:36:9-45:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\35724067d3c9152eb6c33ae1744ef65c\transformed\profileinstaller-1.1.0-beta01\AndroidManifest.xml:39:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\35724067d3c9152eb6c33ae1744ef65c\transformed\profileinstaller-1.1.0-beta01\AndroidManifest.xml:40:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\35724067d3c9152eb6c33ae1744ef65c\transformed\profileinstaller-1.1.0-beta01\AndroidManifest.xml:41:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\35724067d3c9152eb6c33ae1744ef65c\transformed\profileinstaller-1.1.0-beta01\AndroidManifest.xml:38:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\35724067d3c9152eb6c33ae1744ef65c\transformed\profileinstaller-1.1.0-beta01\AndroidManifest.xml:37:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\35724067d3c9152eb6c33ae1744ef65c\transformed\profileinstaller-1.1.0-beta01\AndroidManifest.xml:42:13-44:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\35724067d3c9152eb6c33ae1744ef65c\transformed\profileinstaller-1.1.0-beta01\AndroidManifest.xml:43:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.1.0-beta01] C:\Users\Chinazo\.gradle\caches\transforms-3\35724067d3c9152eb6c33ae1744ef65c\transformed\profileinstaller-1.1.0-beta01\AndroidManifest.xml:43:25-88
