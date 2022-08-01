@@ -45,14 +45,14 @@ fun LoginScreen(navController: NavController = NavController(context = LocalCont
          if (showLoginForm.value) UserForm(loading = false, isCreateAccount = false) { email, password ->
              //logins in user with FB auth account
              viewModel.signInWithEmailAndPassword(email, password) {
-                 navController.navigate(EastreamScreens.TitlesScreen.name)
+                 navController.navigate(EastreamScreens.UserProfileScreen.name)
              }
          }
          else {
              UserForm(loading = false, isCreateAccount = true) { email, password ->
                  //creates new FB auth account
                  viewModel.createUserWithEmailAndPassword(email, password) {
-                     navController.navigate(EastreamScreens.TitlesScreen.name)
+                     navController.navigate(EastreamScreens.UserProfileScreen.name)
                  }
              }
          }

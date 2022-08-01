@@ -20,7 +20,7 @@ import com.eastream.eastream.screens.titles.TitlesScreen
 @Composable
 fun AppNavigation() {
     val navController = rememberNavController()
-    NavHost(navController = navController, startDestination = EastreamScreens.LoginScreen.name) {
+    NavHost(navController = navController, startDestination = EastreamScreens.TitlesScreen.name) {
         composable(EastreamScreens.SplashScreen.name) {
             SplashScreen(navController)
         }

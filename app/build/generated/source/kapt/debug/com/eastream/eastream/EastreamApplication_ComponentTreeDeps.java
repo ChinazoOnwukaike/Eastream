@@ -82,8 +82,8 @@ import hilt_aggregated_deps._dagger_hilt_android_internal_modules_HiltWrapper_Ac
         _dagger_hilt_android_internal_modules_ApplicationContextModule.class,
         _dagger_hilt_android_internal_modules_HiltWrapper_ActivityModule.class,
         _com_eastream_eastream_di_AppModule.class,
-        _com_eastream_eastream_MainActivity_GeneratedInjector.class,
-        _com_eastream_eastream_EastreamApplication_GeneratedInjector.class
+        _com_eastream_eastream_EastreamApplication_GeneratedInjector.class,
+        _com_eastream_eastream_MainActivity_GeneratedInjector.class
     }
 )
 class EastreamApplication_ComponentTreeDeps {
