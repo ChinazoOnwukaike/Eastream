@@ -1,10 +1,13 @@
 package com.eastream.eastream.screens.login
 
 import android.util.Log
+import androidx.compose.runtime.MutableState
+import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.eastream.eastream.model.ETitle
 import com.eastream.eastream.model.EUser
 import com.eastream.eastream.model.Favorites
 import com.google.firebase.auth.FirebaseAuth
@@ -57,25 +60,35 @@ class LoginScreenViewModel : ViewModel(){
 
     private fun createUser(displayName: String?) {
         val userId = auth.currentUser?.uid
-
+        val db = FirebaseFirestore.getInstance()
+        var docInfo = mapOf<String, Any>()
         val user = EUser(userId = userId.toString(),
             displayName = displayName.toString(),
             avatarUrl = "",
             fName = "",
             lName = "",
-            id = null).toMap()
+            id = userId).toMap()
 
         val favs = Favorites(titles = mutableListOf<String>())
-        FirebaseFirestore.getInstance().collection("users").add(user)
-                .addOnCompleteListener{task ->
-                if (task.isSuccessful) {
-                    Log.d("FB", "createUser: Created! ${task.result.id}")
-                    val docId = task.result.id
-                    FirebaseFirestore.getInstance().collection("users").document(docId).collection("favorites").add(favs)
-                } else {
-                    Log.d("FB", "signInWithEmailAndPassword: ${task.result.toString()}")
+        if (userId != null) {
+            FirebaseFirestore.getInstance().collection("users").document(userId).set(user)
+                .addOnSuccessListener{doc ->
+                   val docRef = db.collection("users").document(userId).get()
+                    docRef.addOnSuccessListener {  doc ->
+                        if (doc != null){
+                        val newDoc = doc.toObject(ETitle::class.java)
+                            docInfo = newDoc?.toMap() as Map<String, Any>
+                        }
+                    }
+                    if (doc != null) {
+                        Log.d("FB", "createUser: Created! ${docInfo["id"]}")
+                        val docId = docInfo["id"]
+                        db.collection("users").document(docId as String).collection("favorites").add(favs)
+                    } else {
+                        Log.d("FB", "signInWithEmailAndPassword: New collection creation error")
+                    }
                 }
-            }
+        }
 
     }
 
