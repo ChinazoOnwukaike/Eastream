@@ -15,7 +15,9 @@
     <string name="google_app_id" translatable="false">1:641877192185:android:cfe6ce139827e2ea632128</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAUX0DAPxmvp69vUoovm-t1Xw8HEuvU_KU</string>
     <string name="google_storage_bucket" translatable="false">eastream-app.appspot.com</string>
+    <string name="poster_link">https://image.tmdb.org/t/p/original</string>
     <string name="project_id" translatable="false">eastream-app</string>
+    <string name="tiles_link">https://image.tmdb.org/</string>
     <style name="Theme.Eastream" parent="android:Theme.Material.Light.NoActionBar">
         <item name="android:statusBarColor">@color/purple_700</item>
     </style>

@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">Eastream</string>
     <string name="create_acct">Passwords must have at least 6 characters</string>
+    <string name="poster_link">https://image.tmdb.org/t/p/original</string>
+    <string name="tiles_link">https://image.tmdb.org/</string>
 </resources>

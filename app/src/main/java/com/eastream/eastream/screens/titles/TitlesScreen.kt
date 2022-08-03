@@ -45,14 +45,14 @@ fun TitlesScreen(navController: NavController, viewModel: TitlesViewModel = andr
 ) {
     val scaffoldState = rememberScaffoldState()
     val scope = rememberCoroutineScope()
-    val networks = listOf("Netflix", "Viki", "Hulu", "Prime Video", "Roku", "Tubi")
+    val networks = listOf("Netflix", "Rakuten Viki", "Hulu", "Amazon Prime Video", "The Roku Channel", "Tubi TV")
     var networkName = rememberSaveable { mutableStateOf(networks[0])}
     var listOfTitles = rememberSaveable {mutableStateOf(listOf<BasicTitleInfo>())}
     val gridState = rememberLazyListState(0)
     Scaffold(
         scaffoldState = scaffoldState,
         topBar = {
-            AppBar(viewModel, networks = networks, networkName = networkName, onNavigationIconClick = {
+            AppBar(networks = networks, networkName = networkName, onIconClick = {
                 scope.launch { scaffoldState.drawerState.open()
                 }
             }, navController = navController)
@@ -109,7 +109,7 @@ fun TitlesScreen(navController: NavController, viewModel: TitlesViewModel = andr
                         viewModel.getTitles(networkName.value, listOfTitles)
 
                         itemsIndexed(listOfTitles.value) { index, title ->
-                            ShowCard(title)
+                            ShowCard(title, navController)
                         }
                     })
         }
@@ -120,14 +120,13 @@ fun TitlesScreen(navController: NavController, viewModel: TitlesViewModel = andr
 //@Preview
 @Composable
 fun AppBar(
-    viewModel: TitlesViewModel,
     showSearch: Boolean = true,
     showNetworks: Boolean = true,
     showMenu: Boolean = true,
     navController: NavController,
-    networks: List<String>,
-    networkName: MutableState<String>,
-    onNavigationIconClick: () -> Unit
+    networks: List<String>? = null,
+    networkName: MutableState<String>? = null,
+    onIconClick: () -> Unit = {}
 ) {
     val context = LocalContext.current
     TopAppBar(
@@ -138,16 +137,23 @@ fun AppBar(
             ) {
                 //Menu
                 if (showMenu) { IconButton(
-                    onClick = onNavigationIconClick
+                    onClick = onIconClick
                 ) { Icon(Icons.Default.Menu, contentDescription = "Menu") }} else {
                     IconButton(
-                        onClick = ({navController.navigate(EastreamScreens.TitlesScreen.name)})
+                        onClick = ({
+//                            navController.navigate(EastreamScreens.TitlesScreen.name)
+                            navController.popBackStack()
+                        })
                     ) { Icon(Icons.Outlined.ArrowBack, contentDescription = "Go Back") }
                 }
 
                 //DropMenu
                 Row(horizontalArrangement = Arrangement.Start, verticalAlignment = Alignment.CenterVertically) {
-                    if (showNetworks) { DropMenu(viewModel, networks, networkName) }
+                    if (showNetworks) {
+                        if (networkName != null && networks != null) {
+                                DropMenu(networks, networkName)
+                        }
+                    }
                 }
 
 
@@ -174,8 +180,7 @@ fun AppBar(
 }
 //@Preview
 @Composable
-fun DropMenu(viewModel: TitlesViewModel, networks: List<String>, networkName: MutableState<String>) {
-    val context = LocalContext.current
+fun DropMenu(networks: List<String>, networkName: MutableState<String>) {
     var expanded by remember { mutableStateOf(false) }
     var selectedIndex by remember { mutableStateOf(0) }
 
@@ -187,14 +192,11 @@ fun DropMenu(viewModel: TitlesViewModel, networks: List<String>, networkName: Mu
     ) {
         Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.Start) {
             Text(
-                text = networkName.value, modifier = Modifier
-//                .fillMaxWidth()
+                text = "${networkName.value}    ▼", modifier = Modifier
+                .fillMaxWidth()
                     .clickable(onClick = { expanded = true })
                     .background(Color.Transparent)
             )
-            IconButton(onClick = { expanded = true }) {
-                Icon(Icons.Default.ArrowDropDown, contentDescription = "Dropdown Arrow")
-            }
     }
         DropdownMenu(expanded = expanded,
             onDismissRequest = { expanded = false }) {
@@ -216,13 +218,15 @@ fun DropMenu(viewModel: TitlesViewModel, networks: List<String>, networkName: Mu
 val networkString = listOf("Netflix", "Viki", "Hulu")
 //@Preview
 @Composable
-fun ShowCard(title: BasicTitleInfo) {
+fun ShowCard(title: BasicTitleInfo, navController:NavController) {
 
     Card(modifier = Modifier
         .padding(4.dp)
         .width(100.dp)
         .height(220.dp)
-        .clickable { /*onPressDetails.invoke(title.title.toString()) */ },
+        .clickable {
+            navController.navigate(EastreamScreens.TitleInfoScreen.name + "/${title.id}")
+                   },
         shape = RoundedCornerShape(corner = CornerSize(16.dp)), 
         elevation = 6.dp,
         backgroundColor = MaterialTheme.colors.surface) {
@@ -230,7 +234,7 @@ fun ShowCard(title: BasicTitleInfo) {
             .fillMaxWidth()
             .padding(2.dp),
         horizontalAlignment = Alignment.Start) {
-            Image(painter = rememberImagePainter(data = "https://image.tmdb.org/t/p/original${title.poster}"), contentDescription = "Poster Image",
+            Image(painter = rememberImagePainter(data = "https://image.tmdb.org/t/p/original${title.poster}"), contentDescription = "${title.title} Poster",
             modifier = Modifier
                 .padding(start = 5.dp, top = 5.dp, end = 5.dp)
                 .height(155.dp)
@@ -246,16 +250,13 @@ fun ShowCard(title: BasicTitleInfo) {
                         overflow = TextOverflow.Ellipsis,
                         style = MaterialTheme.typography.caption)
                 }
-                Text(text = "2022", modifier = Modifier
-                    .fillMaxWidth(), style = MaterialTheme.typography.caption)
+                title.year?.let {
+                    Text(text = it, modifier = Modifier
+                        .fillMaxWidth().padding(top = 2.dp), style = MaterialTheme.typography.caption)
+                }
             }
 
 
         }
     }
-}
-
-@Composable
-fun TitlesLazyColumn(showList: MutableList<HashMap <String, Any>>) {
-LazyColumn { }
 }

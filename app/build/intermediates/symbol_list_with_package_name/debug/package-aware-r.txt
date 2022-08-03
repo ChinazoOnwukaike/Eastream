@@ -3297,12 +3297,14 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string poster_link
 string project_id
 string search_menu_title
 string selected
 string status_bar_notification_info_overflow
 string tab
 string template_percent
+string tiles_link
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow
