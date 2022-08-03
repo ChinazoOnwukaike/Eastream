@@ -19,7 +19,9 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string poster_link
 string project_id
+string tiles_link
 style Theme.Eastream
 xml backup_rules
 xml data_extraction_rules
