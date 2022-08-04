@@ -1,11 +1,11 @@
 package com.eastream.eastream.screens.splash
 
+import android.view.animation.OvershootInterpolator
 import android.window.SplashScreen
+import androidx.compose.animation.core.Animatable
+import androidx.compose.animation.core.tween
 import androidx.compose.foundation.BorderStroke
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.CornerSize
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -13,45 +13,45 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.eastream.eastream.components.EastreamLogoText
+import com.eastream.eastream.components.SplashScreenText
+import com.eastream.eastream.navigation.EastreamScreens
+import kotlinx.coroutines.delay
 
-//@Preview
+@Preview
 @Composable
-fun SplashScreen(navController: NavController) {
-    Text(text = "SplashScreen")
+fun SplashScreen(navController: NavController = NavController(context = LocalContext.current)) {
+    val scale = remember { Animatable(0f)}
+
+    LaunchedEffect(key1 = true) {
+        scale.animateTo(
+            targetValue = 0.5f,
+            animationSpec = tween(
+                durationMillis = 500,
+                easing = {
+                    OvershootInterpolator(2f).getInterpolation(it)
+                }
+            )
+        )
+        delay(3000L)
+        navController.navigate(EastreamScreens.TitlesScreen.name)
+    }
     Surface(modifier = Modifier
-        .padding(15.dp)
-        .size(330.dp),
-        shape = CircleShape,
-        color= Color.White,
-        border = BorderStroke(width = 2.dp, color = Color.LightGray)
+        .fillMaxSize(),
+        color = MaterialTheme.colors.background
         ) {
-        Logo()
+        Column(modifier = Modifier.scale(scale.value), verticalArrangement = Arrangement.Center, horizontalAlignment = Alignment.CenterHorizontally) {
+            SplashScreenText()
+        }
         }
     }
-
-@Composable
-fun Logo () {
-    Column(modifier = Modifier.padding(1.dp),
-        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Center) {
-        //Logo
-        Surface (
-            modifier = Modifier
-                .padding(15.dp)
-                .size(width = 150.dp, height = 80.dp),
-            shape = RoundedCornerShape(corner = CornerSize(5.dp)),
-            color= Color.LightGray,
-            border = BorderStroke(width = 2.dp, color = Color.LightGray)
-        ){}
-        //Name
-        EastreamLogoText()
-    }
-}

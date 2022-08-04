@@ -15,6 +15,7 @@ import androidx.compose.runtime.MutableState
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
@@ -26,10 +27,22 @@ import androidx.compose.ui.unit.sp
 @Composable
 fun EastreamLogoText(modifier: Modifier = Modifier) {
     Text(text = "Eastream",
-        modifier = modifier.padding(bottom = 16.dp),
+        modifier = modifier.padding(start = 12.dp, bottom = 16.dp),
         style = MaterialTheme.typography.h3,
         color = Color.DarkGray)
 }
+
+//SplashScreen Text
+@Composable
+fun SplashScreenText(modifier: Modifier = Modifier) {
+    Text(text = "Eastream",
+        modifier = modifier.padding(bottom = 16.dp),
+        style = MaterialTheme.typography.h2,
+        color = Color.DarkGray,
+        fontWeight = FontWeight.SemiBold
+    )
+}
+
 
 //Email Inputs
 @Composable

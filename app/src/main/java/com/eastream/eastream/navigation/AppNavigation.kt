@@ -22,7 +22,7 @@ import com.eastream.eastream.screens.titles.TitlesScreen
 @Composable
 fun AppNavigation() {
     val navController = rememberNavController()
-    NavHost(navController = navController, startDestination = EastreamScreens.TitlesScreen.name) {
+    NavHost(navController = navController, startDestination = EastreamScreens.SplashScreen.name) {
         composable(EastreamScreens.SplashScreen.name) {
             SplashScreen(navController)
         }
@@ -56,8 +56,13 @@ fun AppNavigation() {
             AboutScreen(navController)
         }
 
-        composable(EastreamScreens.SearchScreen.name) {
-            SearchScreen(navController)
+        val searchName = EastreamScreens.SearchScreen.name
+        composable("$searchName/{searchQuery}", arguments = listOf(navArgument("searchQuery"){
+            type = NavType.StringType
+        })) { backStackEntry ->
+            backStackEntry.arguments?.getString("searchQuery").let {
+                SearchScreen(navController = navController, searchQuery = it.toString())
+            }
         }
     }
 }

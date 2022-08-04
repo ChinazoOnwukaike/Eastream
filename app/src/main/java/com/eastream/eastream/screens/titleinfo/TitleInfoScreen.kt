@@ -36,6 +36,7 @@ import androidx.navigation.NavController
 import coil.compose.rememberImagePainter
 import com.eastream.eastream.model.ETitle
 import com.eastream.eastream.screens.titles.AppBar
+import com.google.firebase.auth.FirebaseAuth
 
 
 //@Preview
@@ -50,9 +51,9 @@ fun TitleInfoScreen(navController: NavController = NavController(context = Local
 
     Scaffold(
         topBar = {
-            AppBar(navController = navController, showMenu = false, showNetworks = false, showSearch = false){
+            AppBar(navController = navController, showMenu = false, showNetworks = false, showSearch = false, onIconClick = {
                 navController.popBackStack()
-            }
+            }, details = true)
         }
     ) {
         Surface(modifier = Modifier
@@ -78,6 +79,7 @@ fun TitleInfoScreen(navController: NavController = NavController(context = Local
                         .fillMaxWidth(.5f),it, it1, it2 )
                 } } }
                 Summary(title)
+                Spacer(modifier = Modifier.padding(4.dp))
                 Image(painter = rememberImagePainter(data = "https://image.tmdb.org/t/p/original${title.backdrop}"),
                     contentDescription = "${title.title} Backdrop Image",
                     contentScale = ContentScale.FillBounds,
@@ -104,6 +106,7 @@ private fun Summary(title: ETitle) {
 fun PosterRating(titleInfo:MutableState<ETitle> = mutableStateOf(ETitle()), viewModel: TitleInfoViewModel, isLiked: MutableState<Boolean>) {
     val context = LocalContext.current
     val title = titleInfo.value
+    val auth = FirebaseAuth.getInstance()
 
     Row(
         modifier = Modifier
@@ -132,15 +135,27 @@ fun PosterRating(titleInfo:MutableState<ETitle> = mutableStateOf(ETitle()), view
         ) {
 
             IconButton(onClick = {
-                if (isLiked.value) {
-                    viewModel.deleteTitle(title.id.toString())
-                    Toast.makeText(context, "${title.title} Removed From Favorites", Toast.LENGTH_SHORT).show()
-                    isLiked.value = !isLiked.value
+                if (auth.currentUser?.email.isNullOrEmpty()) {
+                    Toast.makeText(context, "Please Sign In To Favorite", Toast.LENGTH_SHORT).show()
                 }
                 else {
-                    viewModel.addTitle(title.id.toString(), title.toMap() as Map<String, Any>)
-                    Toast.makeText(context, "${title.title} Added To Favorites", Toast.LENGTH_SHORT).show()
-                    isLiked.value = !isLiked.value
+                    if (isLiked.value) {
+                        viewModel.deleteTitle(title.id.toString())
+                        Toast.makeText(
+                            context,
+                            "${title.title} Removed From Favorites",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                        isLiked.value = !isLiked.value
+                    } else {
+                        viewModel.addTitle(title.id.toString(), title.toMap() as Map<String, Any>)
+                        Toast.makeText(
+                            context,
+                            "${title.title} Added To Favorites",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                        isLiked.value = !isLiked.value
+                    }
                 }
             }) {
                 if (isLiked.value) {
@@ -162,10 +177,9 @@ fun WhereToWatch(modifier: Modifier = Modifier,
                  networkImgs: HashMap<String, String>,
                  networkLinks: HashMap<String, String>) {
     val gridState = rememberLazyListState(0)
-    val uriHandler = LocalUriHandler.current
-    val context = LocalContext.current
+//    val adapter = if (networks.size <= 6) 60.dp else 130.dp
 
-    Surface (modifier = Modifier
+    Surface (modifier = modifier
         .fillMaxWidth()
         .background(color = Color.Blue)) {
         LazyVerticalGrid(
