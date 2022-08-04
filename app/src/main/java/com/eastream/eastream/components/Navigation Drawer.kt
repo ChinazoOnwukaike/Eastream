@@ -14,7 +14,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.eastream.eastream.navigation.MenuItem
-import com.eastream.eastream.screens.splash.Logo
 import org.intellij.lang.annotations.JdkConstants
 
 @Preview
@@ -23,7 +22,7 @@ fun DrawerHeader() {
     Box(modifier = Modifier
         .fillMaxWidth()
         .padding(vertical = 50.dp)) {
-        Logo()
+        EastreamLogoText()
     }
 }
 
@@ -38,7 +37,6 @@ fun DrawerBody(
         items(items) {item ->
             Row (
                 modifier = Modifier
-//                    .fillMaxWidth()
                     .clickable {
                         onItemClick(item)
                     }
