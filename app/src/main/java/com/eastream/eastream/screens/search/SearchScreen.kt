@@ -52,7 +52,8 @@ fun SearchScreen(
                 showMenu = false,
                 showSearch = false,
                 showNetworks = false,
-                isSearch = true
+                header = "Search Results",
+                homeBtn = true
                 )
         },
         drawerGesturesEnabled = scaffoldState.drawerState.isOpen,

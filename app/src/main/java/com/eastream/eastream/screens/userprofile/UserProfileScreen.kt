@@ -11,6 +11,7 @@ import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.*
 import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.graphics.Color
@@ -18,6 +19,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.ImeAction
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
@@ -64,7 +66,7 @@ fun UserProfileScreen(
                                         navController = navController,
                                         onSearchTriggered = {
                                                 searchViewModel.updateSearchWidgetState(newValue = SearchWidgetState.OPENED)
-                                        },) }
+                                        }, header = "Profile") }
                         else {
                                 SearchAppBar(
                                         text = searchTextState,
@@ -93,11 +95,13 @@ fun UserProfileScreen(
                                         Text(text = "Back To Home", modifier = Modifier.padding(10.dp), style = MaterialTheme.typography.h6)
                                 }
 
-                                Icon(imageVector = Icons.Outlined.Person, contentDescription = "Avatar", modifier = Modifier
-                                        .size(150.dp)
-                                        .fillMaxWidth())
+                                Column(horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.Center) {
+                                        Icon(imageVector = Icons.Outlined.Person, contentDescription = "Avatar", modifier = Modifier
+                                                .size(150.dp)
+                                                .fillMaxWidth())
+                                }
 
-//                                Text(text = "${user?.displayName}", style = MaterialTheme.typography.h6, textAlign = TextAlign.Center)
+                                Text(text = "Favorites", style = MaterialTheme.typography.h4, modifier = Modifier.padding(16.dp))
 
                                 networks.forEach { network ->
                                         val networkShows = mutableStateOf(listOf<BasicTitleInfo>())
@@ -123,7 +127,7 @@ private fun NetworkCardsList(
 ) {
         val listState = rememberLazyListState()
         Column(modifier = Modifier.padding(12.dp),) {
-                Text(text = "$networkName", style = MaterialTheme.typography.h6, fontWeight = FontWeight.Bold)
+                Text(text = "$networkName", style = MaterialTheme.typography.h6, fontWeight = FontWeight.Bold, modifier = Modifier.padding(4.dp))
                 LazyRow(state = listState,
                         content = {
                                 viewModel.getUserTitles(networkName, listOfTitles)

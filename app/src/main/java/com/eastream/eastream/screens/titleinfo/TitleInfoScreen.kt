@@ -53,7 +53,7 @@ fun TitleInfoScreen(navController: NavController = NavController(context = Local
         topBar = {
             AppBar(navController = navController, showMenu = false, showNetworks = false, showSearch = false, onIconClick = {
                 navController.popBackStack()
-            }, details = true)
+            }, header = "Show Details")
         }
     ) {
         Surface(modifier = Modifier
@@ -170,6 +170,7 @@ fun PosterRating(titleInfo:MutableState<ETitle> = mutableStateOf(ETitle()), view
         }
     }
 }
+
 @ExperimentalFoundationApi
 @Composable
 fun WhereToWatch(modifier: Modifier = Modifier,
@@ -177,9 +178,11 @@ fun WhereToWatch(modifier: Modifier = Modifier,
                  networkImgs: HashMap<String, String>,
                  networkLinks: HashMap<String, String>) {
     val gridState = rememberLazyListState(0)
-//    val adapter = if (networks.size <= 6) 60.dp else 130.dp
+    val uriHandler = LocalUriHandler.current
+    val context = LocalContext.current
+    val adapter = if (networks.size <= 6) 60.dp else 130.dp
 
-    Surface (modifier = modifier
+    Surface (modifier = Modifier
         .fillMaxWidth()
         .background(color = Color.Blue)) {
         LazyVerticalGrid(
@@ -187,7 +190,7 @@ fun WhereToWatch(modifier: Modifier = Modifier,
             state = gridState,
             modifier = Modifier
                 .padding(12.dp)
-                .height(150.dp)
+                .height(adapter)
             ,content = {
                 itemsIndexed(networks) { index, network ->
                     val networkImg = networkLinks[network].toString()
@@ -197,7 +200,6 @@ fun WhereToWatch(modifier: Modifier = Modifier,
             })
     }
 }
-
 //@Preview
 @Composable
 fun NetworkTile(network: String, link: String, networkImg: String) {

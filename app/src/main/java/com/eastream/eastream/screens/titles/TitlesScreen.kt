@@ -178,8 +178,8 @@ fun AppBar(
     networkName: MutableState<String>? = null,
     onIconClick: () -> Unit = {},
     onSearchTriggered: () -> Unit = {},
-    isSearch: Boolean = false,
-    details: Boolean = false
+    header: String = "",
+    homeBtn: Boolean = false
 ) {
     val context = LocalContext.current
     TopAppBar(
@@ -206,13 +206,8 @@ fun AppBar(
                                 DropMenu(networks, networkName)
                         }
                     }
-                    if (isSearch) {
-                        Text(text = "Search Results", textAlign = TextAlign.Start, modifier = Modifier.fillMaxWidth())
-                    }
-
-                    if (details) {
-                        Text(text = "Show Details", textAlign = TextAlign.Start, modifier = Modifier.fillMaxWidth())
-
+                    else {
+                        Text(text = header, textAlign = TextAlign.Start, modifier = Modifier.fillMaxWidth())
                     }
                 }
 
@@ -223,7 +218,14 @@ fun AppBar(
 //                    Toast.makeText(context, "Search", Toast.LENGTH_SHORT).show()
                     onSearchTriggered()
                 }) {
-                    Icon(Icons.Default.Search, contentDescription = "Search")
+                    Icon(Icons.Default.Search, contentDescription = "Search Button")
+                }
+
+            }//Back to Home
+                else if (homeBtn) {IconButton(onClick = {
+                    navController.navigate(EastreamScreens.TitlesScreen.name)
+                }) {
+                    Icon(Icons.Outlined.Home, contentDescription = "Back to Home")
                 }
             }}
 
