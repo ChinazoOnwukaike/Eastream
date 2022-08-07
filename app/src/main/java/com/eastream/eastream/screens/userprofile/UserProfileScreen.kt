@@ -77,23 +77,24 @@ fun UserProfileScreen(
                                         },
                                         onSearchClicked = {
                                                 navController.navigate(EastreamScreens.SearchScreen.name + "/$it")
+                                                searchViewModel.updateSearchWidgetState(newValue = SearchWidgetState.CLOSED)
                                         }
                                 ) } },
                 drawerGesturesEnabled = scaffoldState.drawerState.isOpen,
                 drawerContent = {
                         DrawerHeader()
-                        MenuDrawerBody(navController)
+                        MenuDrawerBody(navController, scaffoldState)
                 },
         ) {
                 Surface(modifier = Modifier.fillMaxSize()) {
 
                         Column(modifier = Modifier.verticalScroll(scrollState)) {
-                                Row(modifier = Modifier.clickable { navController.navigate(EastreamScreens.TitlesScreen.name)  }) {
-                                        IconButton(onClick = { navController.navigate(EastreamScreens.TitlesScreen.name) }) {
-                                                Icon(imageVector = Icons.Outlined.ArrowBack, contentDescription = "Back to Homescreen")
-                                        }
-                                        Text(text = "Back To Home", modifier = Modifier.padding(10.dp), style = MaterialTheme.typography.h6)
-                                }
+//                                Row(modifier = Modifier.clickable { navController.navigate(EastreamScreens.TitlesScreen.name)  }) {
+//                                        IconButton(onClick = { navController.navigate(EastreamScreens.TitlesScreen.name) }) {
+//                                                Icon(imageVector = Icons.Outlined.ArrowBack, contentDescription = "Back to Homescreen")
+//                                        }
+//                                        Text(text = "Back To Home", modifier = Modifier.padding(10.dp), style = MaterialTheme.typography.h6)
+//                                }
 
                                 Column(horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.Center) {
                                         Icon(imageVector = Icons.Outlined.Person, contentDescription = "Avatar", modifier = Modifier

@@ -71,7 +71,7 @@ fun TitleInfoScreen(navController: NavController = NavController(context = Local
                 viewModel.checkInDb(titleId = titleId.toString(), isLiked)
 
 
-                Text(text = "${title.title}", style = MaterialTheme.typography.h4, modifier = Modifier.padding(start = 16.dp))
+                Text(text = "${title.title}", style = MaterialTheme.typography.h4, modifier = Modifier.padding(start = 16.dp), color = MaterialTheme.colors.onBackground)
                 PosterRating(titleInfo, viewModel, isLiked)
                 title.networks?.let { title.networkImg?.let { it1 -> title.showLink?.let { it2 ->
                     WhereToWatch(modifier = Modifier
@@ -124,7 +124,8 @@ fun PosterRating(titleInfo:MutableState<ETitle> = mutableStateOf(ETitle()), view
                 .padding(12.dp)
                 .fillMaxWidth(.5f)
                 .fillMaxHeight()
-                .background(color = Color.LightGray)
+                .background(color = Color.LightGray),
+            contentScale = ContentScale.FillHeight
         )
         Column(
             modifier = Modifier
@@ -184,7 +185,8 @@ fun WhereToWatch(modifier: Modifier = Modifier,
 
     Surface (modifier = Modifier
         .fillMaxWidth()
-        .background(color = Color.Blue)) {
+        , contentColor = MaterialTheme.colors.onBackground)
+    {
         LazyVerticalGrid(
             cells = GridCells.Adaptive(60.dp),
             state = gridState,
@@ -215,8 +217,9 @@ fun NetworkTile(network: String, link: String, networkImg: String) {
                 }
                 .width(40.dp)
                 .height(60.dp)
-                .border(BorderStroke(1.dp, color = Color.LightGray))
-                .background(color = Color.LightGray),
+//                .border(BorderStroke(1.dp, color = Color.LightGray))
+//                .background(color = Color.LightGray)
+            ,
             contentScale = ContentScale.FillHeight
         )}
     else {

@@ -1,19 +1,20 @@
 package com.eastream.eastream.components
 
+import android.widget.Toast
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
-import androidx.compose.material.IconButton
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.OutlinedTextField
-import androidx.compose.material.Text
+import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Close
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableState
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.ImeAction
@@ -22,6 +23,8 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
+import com.eastream.eastream.theme
 
 //Logo Text
 @Composable
@@ -29,7 +32,7 @@ fun EastreamLogoText(modifier: Modifier = Modifier) {
     Text(text = "Eastream",
         modifier = modifier.padding(start = 12.dp, bottom = 16.dp),
         style = MaterialTheme.typography.h3,
-        color = Color.DarkGray)
+        color = MaterialTheme.colors.onBackground)
 }
 
 //SplashScreen Text
@@ -38,7 +41,7 @@ fun SplashScreenText(modifier: Modifier = Modifier) {
     Text(text = "Eastream",
         modifier = modifier.padding(bottom = 16.dp),
         style = MaterialTheme.typography.h2,
-        color = Color.DarkGray,
+        color = MaterialTheme.colors.onBackground,
         fontWeight = FontWeight.SemiBold
     )
 }
@@ -126,3 +129,17 @@ fun PasswordInput(
     )
 }
 
+//Switch Bar
+@Composable
+fun ModeSwitch() {
+    val checkedState = remember { mutableStateOf(true) }
+    val context = LocalContext.current
+    Switch(checked = checkedState.value,
+        onCheckedChange = {
+            theme.value = !theme.value
+//            Toast.makeText(context, "${theme.value}", Toast.LENGTH_SHORT).show()
+            checkedState.value = !checkedState.value
+        }
+    )
+
+}

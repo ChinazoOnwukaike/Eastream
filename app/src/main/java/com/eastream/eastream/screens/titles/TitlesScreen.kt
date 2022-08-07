@@ -2,7 +2,6 @@
 
 package com.eastream.eastream.screens.titles
 
-import android.util.Log
 import android.widget.Toast
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.Image
@@ -14,8 +13,6 @@ import androidx.compose.foundation.shape.CornerSize
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ArrowBack
-import androidx.compose.material.icons.filled.ArrowDropDown
 import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.outlined.*
@@ -26,17 +23,19 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.text.SpanStyle
+import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
-import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import coil.compose.rememberImagePainter
 import com.eastream.eastream.components.DrawerBody
 import com.eastream.eastream.components.DrawerHeader
 import com.eastream.eastream.model.BasicTitleInfo
-import com.eastream.eastream.model.ETitle
 import com.eastream.eastream.navigation.EastreamScreens
 import com.eastream.eastream.navigation.MenuItem
 import com.eastream.eastream.screens.SearchAppBar
@@ -83,6 +82,7 @@ fun TitlesScreen(navController: NavController,
                             searchViewModel.updateSearchWidgetState(newValue = SearchWidgetState.CLOSED) },
                         onSearchClicked = {
                             navController.navigate(EastreamScreens.SearchScreen.name + "/$it")
+                            searchViewModel.updateSearchWidgetState(newValue = SearchWidgetState.CLOSED)
                         }
                     )
                 }
@@ -91,7 +91,7 @@ fun TitlesScreen(navController: NavController,
         drawerGesturesEnabled = scaffoldState.drawerState.isOpen,
         drawerContent = {
             DrawerHeader()
-            MenuDrawerBody(navController)
+            MenuDrawerBody(navController, scaffoldState)
         },
     ) {
         Surface(modifier = Modifier.fillMaxSize()) {
@@ -110,8 +110,9 @@ fun TitlesScreen(navController: NavController,
     }
 
 @Composable
-fun MenuDrawerBody(navController: NavController) {
+fun MenuDrawerBody(navController: NavController, scaffoldState:ScaffoldState) {
     val auth = FirebaseAuth.getInstance()
+    val context = LocalContext.current
     DrawerBody(
         modifier = Modifier.width(150.dp),
         items = listOf(
@@ -128,12 +129,6 @@ fun MenuDrawerBody(navController: NavController) {
                 icon = Icons.Outlined.Person
             ),
             MenuItem(
-                id = "settings",
-                title = "Settings",
-                contentDescription = "Settings",
-                icon = Icons.Outlined.Settings
-            ),
-            MenuItem(
                 id = "about",
                 title = "About",
                 contentDescription = "About Us",
@@ -147,20 +142,27 @@ fun MenuDrawerBody(navController: NavController) {
             ),
         ), onItemClick = {
             when (it.id) {
-                "home" -> navController.navigate(EastreamScreens.TitlesScreen.name)
+                "home" -> {
+                    navController.navigate(EastreamScreens.TitlesScreen.name)
+                }
                 "profile" -> {
                     if (auth.currentUser?.email.isNullOrEmpty()) {
                         navController.navigate(EastreamScreens.LoginScreen.name)
+
                     } else {
-                    navController.navigate(EastreamScreens.UserProfileScreen.name)}
+                        navController.navigate(EastreamScreens.UserProfileScreen.name)
+                    }
+
                 }
-                "settings" -> navController.navigate(EastreamScreens.SettingsScreen.name)
-                "about" -> navController.navigate(EastreamScreens.AboutScreen.name)
+                "about" -> {
+                    navController.navigate(EastreamScreens.AboutScreen.name)
+                }
                 "logout" -> {
                     //todo: Log out user and then navigate back to Titles screen
                     FirebaseAuth.getInstance().signOut().run {
                         navController.navigate(EastreamScreens.TitlesScreen.name)
                     }
+                    Toast.makeText(context, "Signed Out", Toast.LENGTH_SHORT).show()
                 }
             }
         })
@@ -191,12 +193,13 @@ fun AppBar(
                 //Menu
                 if (showMenu) { IconButton(
                     onClick = onIconClick
-                ) { Icon(Icons.Default.Menu, contentDescription = "Menu") }} else {
+                ) { Icon(Icons.Default.Menu, contentDescription = "Menu", tint = MaterialTheme.colors.onPrimary)
+                 }} else {
                     IconButton(
                         onClick = ({
                             navController.popBackStack()
                         })
-                    ) { Icon(Icons.Outlined.ArrowBack, contentDescription = "Go Back") }
+                    ) { Icon(Icons.Outlined.ArrowBack, contentDescription = "Go Back", tint = MaterialTheme.colors.onPrimary) }
                 }
 
                 //DropMenu
@@ -207,7 +210,7 @@ fun AppBar(
                         }
                     }
                     else {
-                        Text(text = header, textAlign = TextAlign.Start, modifier = Modifier.fillMaxWidth())
+                        Text(text = header, textAlign = TextAlign.Start, modifier = Modifier.fillMaxWidth(), color = MaterialTheme.colors.onPrimary)
                     }
                 }
 
@@ -218,14 +221,14 @@ fun AppBar(
 //                    Toast.makeText(context, "Search", Toast.LENGTH_SHORT).show()
                     onSearchTriggered()
                 }) {
-                    Icon(Icons.Default.Search, contentDescription = "Search Button")
+                    Icon(Icons.Default.Search, contentDescription = "Search Button", tint = MaterialTheme.colors.onPrimary)
                 }
 
             }//Back to Home
                 else if (homeBtn) {IconButton(onClick = {
                     navController.navigate(EastreamScreens.TitlesScreen.name)
                 }) {
-                    Icon(Icons.Outlined.Home, contentDescription = "Back to Home")
+                    Icon(Icons.Outlined.Home, contentDescription = "Back to Home", tint = MaterialTheme.colors.onPrimary)
                 }
             }}
 
@@ -253,13 +256,26 @@ fun DropMenu(networks: List<String>, networkName: MutableState<String>) {
             .wrapContentSize(Alignment.TopStart),
             contentAlignment = Alignment.CenterStart
     ) {
-        Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.Start) {
+        Row(verticalAlignment = Alignment.Top, horizontalArrangement = Arrangement.Start) {
             Text(
-                text = "${networkName.value}    ▼", modifier = Modifier
+                buildAnnotatedString {
+                    withStyle(style = SpanStyle(color = MaterialTheme.colors.onPrimary)) {
+                        append("${networkName.value}")
+                    }
+                    withStyle(
+                        style = SpanStyle(
+                            color = MaterialTheme.colors.onPrimary,
+                            fontSize = 15.sp
+                        )
+                    ) {
+                        append("▼")
+                    }
+                }, modifier = Modifier
                     .fillMaxWidth()
                     .clickable(onClick = { expanded = true })
-                    .background(Color.Transparent)
-            )
+                    .background(Color.Transparent),
+                color = MaterialTheme.colors.onPrimary
+         )
     }
         DropdownMenu(expanded = expanded,
             onDismissRequest = { expanded = false }) {

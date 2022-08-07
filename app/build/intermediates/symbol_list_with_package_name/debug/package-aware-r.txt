@@ -1143,6 +1143,12 @@ color background_floating_material_light
 color background_material_dark
 color background_material_light
 color black
+color blue_300
+color blue_400
+color blue_500
+color blue_600
+color blue_700
+color blue_800
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -1702,10 +1708,9 @@ color primary_text_default_material_dark
 color primary_text_default_material_light
 color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
-color purple_200
-color purple_500
-color purple_700
 color radiobutton_themeable_attribute_color
+color red_dark
+color red_light
 color ripple_material_dark
 color ripple_material_light
 color secondary_text_default_material_dark
@@ -1718,8 +1723,7 @@ color switch_thumb_material_dark
 color switch_thumb_material_light
 color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
-color teal_200
-color teal_700
+color teal_1
 color test_color
 color test_mtrl_calendar_day
 color test_mtrl_calendar_day_selected

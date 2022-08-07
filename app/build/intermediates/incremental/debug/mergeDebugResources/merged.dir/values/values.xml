@@ -492,6 +492,12 @@
     <color name="background_material_dark">@color/material_grey_850</color>
     <color name="background_material_light">@color/material_grey_50</color>
     <color name="black">#FF000000</color>
+    <color name="blue_300">#FF64B5F6</color>
+    <color name="blue_400">#FF42A5F5</color>
+    <color name="blue_500">#FF2196F3</color>
+    <color name="blue_600">#FF1E88E5</color>
+    <color name="blue_700">#FF1976D2</color>
+    <color name="blue_800">#FF1565C0</color>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
     <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light</color>
@@ -727,9 +733,8 @@
     <color name="primary_text_default_material_light">#de000000</color>
     <color name="primary_text_disabled_material_dark">#4Dffffff</color>
     <color name="primary_text_disabled_material_light">#39000000</color>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
+    <color name="red_dark">#B00020</color>
+    <color name="red_light">#EF5350</color>
     <color name="ripple_material_dark">#33ffffff</color>
     <color name="ripple_material_light">#1f000000</color>
     <color name="secondary_text_default_material_dark">#b3ffffff</color>
@@ -740,8 +745,7 @@
     <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
+    <color name="teal_1">#1AC6FF</color>
     <color name="test_color">#000</color>
     <color name="tooltip_background_dark">#e6616161</color>
     <color name="tooltip_background_light">#e6FFFFFF</color>
@@ -5627,7 +5631,7 @@
     <item name="windowNoTitle">true</item>
   </style>
     <style name="Theme.Eastream" parent="android:Theme.Material.Light.NoActionBar">
-        <item name="android:statusBarColor">@color/purple_700</item>
+        <item name="android:statusBarColor"> @color/black</item>
     </style>
     <style name="Theme.Material3.Dark" parent="Base.Theme.Material3.Dark"/>
     <style name="Theme.Material3.Dark.BottomSheetDialog" parent="Base.Theme.Material3.Dark.BottomSheetDialog"/>

@@ -11,16 +11,20 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.eastream.eastream.navigation.AppNavigation
 import com.eastream.eastream.ui.theme.EastreamTheme
+import com.eastream.eastream.utils.AppTheme
 import com.google.firebase.firestore.FirebaseFirestore
 import dagger.hilt.android.AndroidEntryPoint
 import kotlin.math.log
 
+var theme = mutableStateOf(true)
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,7 +38,7 @@ class MainActivity : ComponentActivity() {
 @OptIn(ExperimentalComposeUiApi::class)
 @Composable
 fun App() {
-    EastreamTheme {
+    AppTheme(theme.value) {
         Surface(color = MaterialTheme.colors.background,
         modifier = Modifier.fillMaxSize()) {
             Column(verticalArrangement = Arrangement.Center,

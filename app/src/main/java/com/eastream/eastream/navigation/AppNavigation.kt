@@ -12,7 +12,6 @@ import com.eastream.eastream.screens.UserProfileScreen
 import com.eastream.eastream.screens.about.AboutScreen
 import com.eastream.eastream.screens.login.LoginScreen
 import com.eastream.eastream.screens.search.SearchScreen
-import com.eastream.eastream.screens.settings.SettingsScreen
 import com.eastream.eastream.screens.splash.SplashScreen
 import com.eastream.eastream.screens.titleinfo.TitleInfoScreen
 import com.eastream.eastream.screens.titles.TitlesScreen
@@ -46,10 +45,6 @@ fun AppNavigation() {
 
         composable(EastreamScreens.LoginScreen.name) {
             LoginScreen(navController)
-        }
-
-        composable(EastreamScreens.SettingsScreen.name) {
-            SettingsScreen(navController)
         }
 
         composable(EastreamScreens.AboutScreen.name) {

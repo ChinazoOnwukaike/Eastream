@@ -59,7 +59,7 @@ fun SearchScreen(
         drawerGesturesEnabled = scaffoldState.drawerState.isOpen,
         drawerContent = {
             DrawerHeader()
-            MenuDrawerBody(navController)
+            MenuDrawerBody(navController, scaffoldState)
         },
     ) {
         Surface(modifier = Modifier.fillMaxSize()) {

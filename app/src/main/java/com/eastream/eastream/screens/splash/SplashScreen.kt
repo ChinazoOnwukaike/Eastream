@@ -48,7 +48,7 @@ fun SplashScreen(navController: NavController = NavController(context = LocalCon
     }
     Surface(modifier = Modifier
         .fillMaxSize(),
-        color = MaterialTheme.colors.background
+        color = MaterialTheme.colors.surface
         ) {
         Column(modifier = Modifier.scale(scale.value), verticalArrangement = Arrangement.Center, horizontalAlignment = Alignment.CenterHorizontally) {
             SplashScreenText()

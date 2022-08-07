@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.eastream.eastream.app-mergeDebugResources-66:/values-xlarge-v4/values-xlarge-v4.xml",
+            "outputFile": "com.eastream.eastream.app-mergeDebugResources-68:/values-xlarge-v4/values-xlarge-v4.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Chinazo\\.gradle\\caches\\transforms-3\\e6f6966ab768d5d0ad54a37b83930ea7\\transformed\\appcompat-1.2.0\\res\\values-xlarge-v4\\values-xlarge-v4.xml",

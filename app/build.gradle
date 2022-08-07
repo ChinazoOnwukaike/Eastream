@@ -4,6 +4,7 @@ plugins {
     id 'com.google.gms.google-services'
     id  'kotlin-kapt'
     id "dagger.hilt.android.plugin"
+    id 'kotlin-parcelize'
 }
 
 //hilt-dagger
@@ -112,4 +113,7 @@ dependencies {
 
     //Material
     implementation "androidx.compose.material:material-icons-extended:$compose_version"
+
+    //DataStore
+    implementation "androidx.datastore:datastore-preferences:1.0.0"
 }
