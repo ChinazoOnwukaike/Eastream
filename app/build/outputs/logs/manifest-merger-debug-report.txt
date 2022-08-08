@@ -81,6 +81,7 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\Chinazo\.gra
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\Chinazo\.gradle\caches\transforms-3\c7904143a4a55a409a5a9d4ea78ff3bf\transformed\lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.datastore:datastore-preferences:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\44d4381f1ae81d605b3737bb1d256465\transformed\datastore-preferences-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.datastore:datastore:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\8cc9218cee290c8413980b2a1b805309\transformed\datastore-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [io.coil-kt:coil-svg:1.3.2] C:\Users\Chinazo\.gradle\caches\transforms-3\f3cf3ba9bdabf7115948eff7454b431e\transformed\coil-svg-1.3.2\AndroidManifest.xml:2:1-9:12
 MERGED from [io.coil-kt:coil:1.4.0] C:\Users\Chinazo\.gradle\caches\transforms-3\8dadd07997a29f89e8f5c0c100217d74\transformed\coil-1.4.0\AndroidManifest.xml:2:1-9:12
 MERGED from [io.coil-kt:coil-base:1.4.0] C:\Users\Chinazo\.gradle\caches\transforms-3\828ace80d5a517301ae6d2b3e5c3513c\transformed\coil-base-1.4.0\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.core:core-ktx:1.8.0] C:\Users\Chinazo\.gradle\caches\transforms-3\1ad8f831df954f70498adc257c765f1f\transformed\core-ktx-1.8.0\AndroidManifest.xml:2:1-9:12
@@ -116,6 +117,7 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Chinazo\.gradle\
 MERGED from [androidx.print:print:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\6e70620a7b5780026515c894477ff854\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.exifinterface:exifinterface:1.3.3] C:\Users\Chinazo\.gradle\caches\transforms-3\62b66532ea7d87e741e8927a04851be3\transformed\exifinterface-1.3.3\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\b45f182b1e1bc7ad25111aab4b6905e1\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.caverock:androidsvg-aar:1.4] C:\Users\Chinazo\.gradle\caches\transforms-3\38d2050de6865d8311865c23ba6fff7b\transformed\androidsvg-aar-1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.dagger:dagger-lint-aar:2.39] C:\Users\Chinazo\.gradle\caches\transforms-3\8a9ff1eab499ed8bcfc60cd5180c6f08\transformed\dagger-lint-aar-2.39\AndroidManifest.xml:16:1-19:12
 MERGED from [io.grpc:grpc-android:1.44.1] C:\Users\Chinazo\.gradle\caches\transforms-3\93e01b46455b10fcdd030ad3e137e541\transformed\grpc-android-1.44.1\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\17c80e86afdf5793da23b3a62c0a17e4\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
@@ -420,6 +422,8 @@ MERGED from [androidx.datastore:datastore-preferences:1.0.0] C:\Users\Chinazo\.g
 MERGED from [androidx.datastore:datastore-preferences:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\44d4381f1ae81d605b3737bb1d256465\transformed\datastore-preferences-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.datastore:datastore:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\8cc9218cee290c8413980b2a1b805309\transformed\datastore-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.datastore:datastore:1.0.0] C:\Users\Chinazo\.gradle\caches\transforms-3\8cc9218cee290c8413980b2a1b805309\transformed\datastore-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [io.coil-kt:coil-svg:1.3.2] C:\Users\Chinazo\.gradle\caches\transforms-3\f3cf3ba9bdabf7115948eff7454b431e\transformed\coil-svg-1.3.2\AndroidManifest.xml:5:5-7:41
+MERGED from [io.coil-kt:coil-svg:1.3.2] C:\Users\Chinazo\.gradle\caches\transforms-3\f3cf3ba9bdabf7115948eff7454b431e\transformed\coil-svg-1.3.2\AndroidManifest.xml:5:5-7:41
 MERGED from [io.coil-kt:coil:1.4.0] C:\Users\Chinazo\.gradle\caches\transforms-3\8dadd07997a29f89e8f5c0c100217d74\transformed\coil-1.4.0\AndroidManifest.xml:5:5-7:41
 MERGED from [io.coil-kt:coil:1.4.0] C:\Users\Chinazo\.gradle\caches\transforms-3\8dadd07997a29f89e8f5c0c100217d74\transformed\coil-1.4.0\AndroidManifest.xml:5:5-7:41
 MERGED from [io.coil-kt:coil-base:1.4.0] C:\Users\Chinazo\.gradle\caches\transforms-3\828ace80d5a517301ae6d2b3e5c3513c\transformed\coil-base-1.4.0\AndroidManifest.xml:5:5-7:41
@@ -490,6 +494,8 @@ MERGED from [androidx.exifinterface:exifinterface:1.3.3] C:\Users\Chinazo\.gradl
 MERGED from [androidx.exifinterface:exifinterface:1.3.3] C:\Users\Chinazo\.gradle\caches\transforms-3\62b66532ea7d87e741e8927a04851be3\transformed\exifinterface-1.3.3\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\b45f182b1e1bc7ad25111aab4b6905e1\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\Chinazo\.gradle\caches\transforms-3\b45f182b1e1bc7ad25111aab4b6905e1\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.caverock:androidsvg-aar:1.4] C:\Users\Chinazo\.gradle\caches\transforms-3\38d2050de6865d8311865c23ba6fff7b\transformed\androidsvg-aar-1.4\AndroidManifest.xml:7:5-9:41
+MERGED from [com.caverock:androidsvg-aar:1.4] C:\Users\Chinazo\.gradle\caches\transforms-3\38d2050de6865d8311865c23ba6fff7b\transformed\androidsvg-aar-1.4\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.dagger:dagger-lint-aar:2.39] C:\Users\Chinazo\.gradle\caches\transforms-3\8a9ff1eab499ed8bcfc60cd5180c6f08\transformed\dagger-lint-aar-2.39\AndroidManifest.xml:18:3-42
 MERGED from [com.google.dagger:dagger-lint-aar:2.39] C:\Users\Chinazo\.gradle\caches\transforms-3\8a9ff1eab499ed8bcfc60cd5180c6f08\transformed\dagger-lint-aar-2.39\AndroidManifest.xml:18:3-42
 MERGED from [io.grpc:grpc-android:1.44.1] C:\Users\Chinazo\.gradle\caches\transforms-3\93e01b46455b10fcdd030ad3e137e541\transformed\grpc-android-1.44.1\AndroidManifest.xml:5:5-7:41

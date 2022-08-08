@@ -1,36 +1,22 @@
 package com.eastream.eastream.screens.search
 
-import android.app.appsearch.SearchResult
-import android.util.Log
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.GridCells
 import androidx.compose.foundation.lazy.LazyVerticalGrid
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.lazy.rememberLazyListState
-import androidx.compose.foundation.rememberScrollState
-import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.*
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.outlined.ArrowBack
-import androidx.compose.material.icons.outlined.BrokenImage
-import androidx.compose.material.icons.outlined.Person
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import com.eastream.eastream.components.AppBar
 import com.eastream.eastream.components.DrawerHeader
-import com.eastream.eastream.model.BasicTitleInfo
-import com.eastream.eastream.navigation.EastreamScreens
-import com.eastream.eastream.screens.titleWords
-import com.eastream.eastream.screens.titles.AppBar
-import com.eastream.eastream.screens.titles.MenuDrawerBody
-import com.eastream.eastream.screens.titles.ShowCard
-import kotlinx.coroutines.launch
+import com.eastream.eastream.components.MenuDrawerBody
+import com.eastream.eastream.components.ShowCard
 
 
 @OptIn(ExperimentalFoundationApi::class)
@@ -61,6 +47,7 @@ fun SearchScreen(
             DrawerHeader()
             MenuDrawerBody(navController, scaffoldState)
         },
+        drawerBackgroundColor = MaterialTheme.colors.background
     ) {
         Surface(modifier = Modifier.fillMaxSize()) {
                 LazyVerticalGrid(

@@ -373,7 +373,7 @@ public final class DaggerEastreamApplication_HiltComponents_SingletonC extends E
     }
 
     @Override
-    public void injectMainActivity(MainActivity mainActivity) {
+    public void injectMainActivity(MainActivity arg0) {
     }
 
     @Override

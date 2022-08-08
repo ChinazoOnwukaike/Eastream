@@ -30,6 +30,7 @@ import com.eastream.eastream.R
 import com.eastream.eastream.components.EastreamLogoText
 import com.eastream.eastream.components.EmailInput
 import com.eastream.eastream.components.PasswordInput
+import com.eastream.eastream.components.UserForm
 import com.eastream.eastream.navigation.EastreamScreens
 import com.eastream.eastream.screens.UserProfileScreen
 
@@ -78,71 +79,6 @@ fun LoginScreen(navController: NavController = NavController(context = LocalCont
     }
 
 
-@ExperimentalComposeUiApi
-@Composable
-fun UserForm(
-    loading: Boolean = false,
-    isCreateAccount: Boolean = false,
-    onDone: (String, String) -> Unit = {email, pwd ->}
-) {
-    val email = rememberSaveable{ mutableStateOf("") }
-    val password = rememberSaveable{ mutableStateOf("") }
-    val passwordVisibility = rememberSaveable{ mutableStateOf(false) }
-    val passwordFocusRequest = FocusRequester.Default
-    val keyboardController = LocalSoftwareKeyboardController.current
-    val valid = remember(email.value, password.value) {
-        email.value.trim().isNotEmpty() && password.value.trim().isNotEmpty()
-    }
-
-    val modifier = Modifier
-        .height(250.dp)
-        .background(MaterialTheme.colors.background)
-        .verticalScroll(rememberScrollState())
-
-    Column(modifier, horizontalAlignment = Alignment.CenterHorizontally) {
-        EmailInput(emailState = email, enabled = !loading, onAction = KeyboardActions {
-            passwordFocusRequest.requestFocus()
-        })
-        PasswordInput(
-            modifier = Modifier.focusRequester(passwordFocusRequest),
-            passwordState = password,
-            labelId = "Password",
-            enabled = !loading,
-            passwordVisibility = passwordVisibility,
-            onAction = KeyboardActions {
-                if (!valid) return@KeyboardActions
-                onDone(email.value.trim(), password.value.trim())
-    })
-        //Password Info String
-        if (isCreateAccount) Text(text = stringResource(id = R.string.create_acct),
-            modifier = Modifier.padding(bottom = 2.dp), style = MaterialTheme.typography.subtitle2
-        ) else Text(text = "")
-
-        if (isCreateAccount) Spacer(modifier = Modifier.height(5.dp))
-
-        SubmitButton (
-            textId = if (isCreateAccount) "Create Account" else "Login",
-            loading = loading,
-            validInputs = valid
-                ) {
-                onDone(email.value.trim(), password.value.trim())
-            keyboardController?.hide()
-        }
-}}
-
-@Composable
-fun SubmitButton(textId: String, loading: Boolean, validInputs: Boolean, onClick: () -> Unit) {
-    Button(onClick = onClick,
-    modifier = Modifier
-        .padding(3.dp)
-        .fillMaxWidth(),
-    enabled = !loading && validInputs,
-    shape = CircleShape
-        ){
-            if (loading) CircularProgressIndicator(modifier = Modifier.size(25.dp))
-            else Text(text = textId, modifier = Modifier.padding(5.dp))
-    }
-}
 
 
 

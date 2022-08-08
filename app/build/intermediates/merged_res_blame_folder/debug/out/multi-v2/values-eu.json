@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.eastream.eastream.app-mergeDebugResources-68:/values-eu/values-eu.xml",
+            "outputFile": "com.eastream.eastream.app-mergeDebugResources-69:/values-eu/values-eu.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Chinazo\\.gradle\\caches\\transforms-3\\519e759df39841184b66604219ccc648\\transformed\\browser-1.4.0\\res\\values-eu\\values-eu.xml",

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.eastream.eastream.app-mergeDebugResources-68:/values-ko/values-ko.xml",
+            "outputFile": "com.eastream.eastream.app-mergeDebugResources-69:/values-ko/values-ko.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Chinazo\\.gradle\\caches\\transforms-3\\46a8439a3d28da37243893dd7eec3fb4\\transformed\\play-services-basement-18.0.0\\res\\values-ko\\values.xml",
