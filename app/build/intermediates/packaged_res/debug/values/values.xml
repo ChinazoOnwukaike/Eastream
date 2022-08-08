@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
+    <color name="blue_300">#FF64B5F6</color>
+    <color name="blue_400">#FF42A5F5</color>
+    <color name="blue_500">#FF2196F3</color>
+    <color name="blue_600">#FF1E88E5</color>
+    <color name="blue_700">#FF1976D2</color>
+    <color name="blue_800">#FF1565C0</color>
+    <color name="ic_launcher_background">#222222</color>
+    <color name="red_dark">#B00020</color>
+    <color name="red_light">#EF5350</color>
+    <color name="teal_1">#1AC6FF</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">Eastream</string>
     <string name="create_acct">Passwords must have at least 6 characters</string>
@@ -19,6 +24,6 @@
     <string name="project_id" translatable="false">eastream-app</string>
     <string name="tiles_link">https://image.tmdb.org/</string>
     <style name="Theme.Eastream" parent="android:Theme.Material.Light.NoActionBar">
-        <item name="android:statusBarColor">@color/purple_700</item>
+        <item name="android:statusBarColor"> @color/black</item>
     </style>
 </resources>

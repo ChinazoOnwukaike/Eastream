@@ -34,12 +34,11 @@ import androidx.core.content.ContextCompat.startActivity
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import coil.compose.rememberImagePainter
+import com.eastream.eastream.components.*
 import com.eastream.eastream.model.ETitle
-import com.eastream.eastream.screens.titles.AppBar
 import com.google.firebase.auth.FirebaseAuth
 
 
-//@Preview
 @ExperimentalFoundationApi
 @Composable
 fun TitleInfoScreen(navController: NavController = NavController(context = LocalContext.current),
@@ -48,6 +47,7 @@ fun TitleInfoScreen(navController: NavController = NavController(context = Local
     var titleInfo = remember {mutableStateOf(ETitle()) }
     var scrollState = rememberScrollState()
     val isLiked = remember {mutableStateOf(false)}
+    val loading = viewModel.loading.value
 
     Scaffold(
         topBar = {
@@ -56,6 +56,7 @@ fun TitleInfoScreen(navController: NavController = NavController(context = Local
             }, header = "Show Details")
         }
     ) {
+        
         Surface(modifier = Modifier
             .padding(3.dp)
             .fillMaxSize()) {
@@ -71,7 +72,7 @@ fun TitleInfoScreen(navController: NavController = NavController(context = Local
                 viewModel.checkInDb(titleId = titleId.toString(), isLiked)
 
 
-                Text(text = "${title.title}", style = MaterialTheme.typography.h4, modifier = Modifier.padding(start = 16.dp))
+                Text(text = "${title.title}", style = MaterialTheme.typography.h4, modifier = Modifier.padding(start = 16.dp), color = MaterialTheme.colors.onBackground)
                 PosterRating(titleInfo, viewModel, isLiked)
                 title.networks?.let { title.networkImg?.let { it1 -> title.showLink?.let { it2 ->
                     WhereToWatch(modifier = Modifier
@@ -85,144 +86,9 @@ fun TitleInfoScreen(navController: NavController = NavController(context = Local
                     contentScale = ContentScale.FillBounds,
                     modifier = Modifier.height(250.dp)
                 )
-
             }
         }
     }
 }
 
-@Composable
-private fun Summary(title: ETitle) {
-    Column(modifier = Modifier.padding(12.dp), horizontalAlignment = Alignment.Start) {
-        Text(text = "Summary", style = MaterialTheme.typography.h6)
-        Text(text = "${title.summary}", style = MaterialTheme.typography.body1, modifier = Modifier.padding(top = 4.dp, bottom = 4.dp), lineHeight = 25.sp)
-    }
-}
-
-
-@ExperimentalFoundationApi
-//@Preview
-@Composable
-fun PosterRating(titleInfo:MutableState<ETitle> = mutableStateOf(ETitle()), viewModel: TitleInfoViewModel, isLiked: MutableState<Boolean>) {
-    val context = LocalContext.current
-    val title = titleInfo.value
-    val auth = FirebaseAuth.getInstance()
-
-    Row(
-        modifier = Modifier
-            .padding(4.dp)
-            .height(300.dp)
-            .fillMaxWidth(),
-        verticalAlignment = Alignment.Bottom,
-        horizontalArrangement = Arrangement.Start
-    ) {
-
-        Image(
-            painter = rememberImagePainter(data = "https://image.tmdb.org/t/p/original${title.poster}"),
-            contentDescription = "${title.title} Poster",
-            modifier = Modifier
-                .padding(12.dp)
-                .fillMaxWidth(.5f)
-                .fillMaxHeight()
-                .background(color = Color.LightGray)
-        )
-        Column(
-            modifier = Modifier
-                .padding(5.dp)
-                .fillMaxWidth(.5f),
-            verticalArrangement = Arrangement.Center,
-            horizontalAlignment = Alignment.Start
-        ) {
-
-            IconButton(onClick = {
-                if (auth.currentUser?.email.isNullOrEmpty()) {
-                    Toast.makeText(context, "Please Sign In To Favorite", Toast.LENGTH_SHORT).show()
-                }
-                else {
-                    if (isLiked.value) {
-                        viewModel.deleteTitle(title.id.toString())
-                        Toast.makeText(
-                            context,
-                            "${title.title} Removed From Favorites",
-                            Toast.LENGTH_SHORT
-                        ).show()
-                        isLiked.value = !isLiked.value
-                    } else {
-                        viewModel.addTitle(title.id.toString(), title.toMap() as Map<String, Any>)
-                        Toast.makeText(
-                            context,
-                            "${title.title} Added To Favorites",
-                            Toast.LENGTH_SHORT
-                        ).show()
-                        isLiked.value = !isLiked.value
-                    }
-                }
-            }) {
-                if (isLiked.value) {
-                    Icon(imageVector = Icons.Outlined.Favorite, contentDescription = "Removed From Favorites")
-                }
-                else {
-                    Icon(imageVector = Icons.Outlined.FavoriteBorder, contentDescription = "Click To Add To Favorites")
-                }
-            }
-
-            Text(text = "${title.voteAvg}/10 TMDB")
-        }
-    }
-}
-
-@ExperimentalFoundationApi
-@Composable
-fun WhereToWatch(modifier: Modifier = Modifier,
-                 networks: List<String>,
-                 networkImgs: HashMap<String, String>,
-                 networkLinks: HashMap<String, String>) {
-    val gridState = rememberLazyListState(0)
-    val uriHandler = LocalUriHandler.current
-    val context = LocalContext.current
-    val adapter = if (networks.size <= 6) 60.dp else 130.dp
-
-    Surface (modifier = Modifier
-        .fillMaxWidth()
-        .background(color = Color.Blue)) {
-        LazyVerticalGrid(
-            cells = GridCells.Adaptive(60.dp),
-            state = gridState,
-            modifier = Modifier
-                .padding(12.dp)
-                .height(adapter)
-            ,content = {
-                itemsIndexed(networks) { index, network ->
-                    val networkImg = networkLinks[network].toString()
-                    val link = networkImgs[network].toString()
-                    NetworkTile(network, link, networkImg)
-                }
-            })
-    }
-}
-//@Preview
-@Composable
-fun NetworkTile(network: String, link: String, networkImg: String) {
-    val uriHandler = LocalUriHandler.current
-
-    if (networkImg != null){
-        Image(painter = rememberImagePainter(data = "https://image.tmdb.org/${networkImg}"),
-            contentDescription = "$network Link",
-            modifier = Modifier
-                .padding(4.dp)
-                .clickable {
-                    uriHandler.openUri(link)
-                }
-                .width(40.dp)
-                .height(60.dp)
-                .border(BorderStroke(1.dp, color = Color.LightGray))
-                .background(color = Color.LightGray),
-            contentScale = ContentScale.FillHeight
-        )}
-    else {
-        IconButton(onClick = { /*TODO*/ }) {
-            Icon(imageVector = Icons.Outlined.BrokenImage
-                , contentDescription = "No Image")
-        }
-    }}
 

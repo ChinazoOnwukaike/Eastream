@@ -1,6 +1,10 @@
 package com.eastream.eastream.model
 
-data class BasicTitleInfo(
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
+data class BasicTitleInfo (
     val id: String? = null,
     val title: String? = null,
     val summary: String? = null,
@@ -13,4 +17,4 @@ data class BasicTitleInfo(
     val popularity: Double? = null,
     val TMDBId: Long? = null,
     val year: String? = null
-    )
+    ) : Parcelable

@@ -1,14 +1,18 @@
 package com.eastream.eastream;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ProgressBar;
 import androidx.activity.ComponentActivity;
-import androidx.compose.foundation.layout.Arrangement;
-import androidx.compose.runtime.Composable;
+import androidx.compose.foundation.layout.*;
+import androidx.compose.material.*;
+import androidx.compose.runtime.*;
 import androidx.compose.ui.Alignment;
 import androidx.compose.ui.ExperimentalComposeUiApi;
 import androidx.compose.ui.Modifier;
 import androidx.compose.ui.tooling.preview.Preview;
+import com.eastream.eastream.repository.StoreThemeMode;
 import com.google.firebase.firestore.FirebaseFirestore;
 import dagger.hilt.android.AndroidEntryPoint;
 

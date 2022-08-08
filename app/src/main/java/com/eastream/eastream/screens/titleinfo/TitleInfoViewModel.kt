@@ -16,15 +16,14 @@ import com.google.firebase.ktx.Firebase
 import kotlinx.coroutines.launch
 
 class TitleInfoViewModel: ViewModel() {
-    private val _loading = MutableLiveData(false)
-    val loading: LiveData<Boolean> = _loading
+//    private val _loading = MutableLiveData(false)
+    var loading = mutableStateOf(false)
     private val userId = FirebaseAuth.getInstance().currentUser?.uid
     private val db = FirebaseFirestore.getInstance()
 
     fun getOneTitle(titleId:String?, titleInfo: MutableState<ETitle>) = viewModelScope.launch {
 //        Log.d("FB", "getOneTitle: $titleId")
-        if (_loading.value == false) {
-            _loading.value = true
+            loading.value = true
 
 
             if (titleId != null) {
@@ -43,14 +42,11 @@ class TitleInfoViewModel: ViewModel() {
 //                        Log.d("FB", "getOneTitle: ", it){
                     }
         }
-        _loading.value = false
-        }
-
+        loading.value = false
     }
 
     fun checkInDb(titleId: String, isLiked: MutableState<Boolean> = mutableStateOf(false)) = viewModelScope.launch {
-        if (_loading.value == false){
-            _loading.value = true
+            loading.value = true
 
             val docRef = userId?.let { db.collection("users").document(it).collection("favorites").document(titleId) }
 
@@ -69,14 +65,11 @@ class TitleInfoViewModel: ViewModel() {
                     Log.d("FB", "getTitles: not there", it)
                 }
             }
-            _loading.value = false
-        }
+            loading.value = false
     }
 
     fun addTitle(titleId: String, titleData: Map<String, Any>) = viewModelScope.launch {
-
-        if (_loading.value == false){
-            _loading.value = true
+        loading.value = true
 
             if (userId != null) {
                 db.collection("users").document(userId).collection("favorites").document(titleId)
@@ -88,13 +81,11 @@ class TitleInfoViewModel: ViewModel() {
                         Log.d("FB", "getTitles: Title not added", it)
                     }
             }
-            _loading.value = false
-        }
+            loading.value = false
     }
 
     fun deleteTitle(titleId: String) = viewModelScope.launch {
-        if (_loading.value == false){
-            _loading.value = true
+        loading.value = true
 
             if (userId != null) {
                 db.collection("users").document(userId).collection("favorites").document(titleId)
@@ -106,7 +97,6 @@ class TitleInfoViewModel: ViewModel() {
                         Log.d("FB", "getTitles: Title not deleted", it)
                     }
             }
-            _loading.value = false
+            loading.value = false
         }
-    }
 }
