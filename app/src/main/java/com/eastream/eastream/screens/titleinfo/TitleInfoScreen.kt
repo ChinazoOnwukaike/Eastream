@@ -44,9 +44,8 @@ import com.google.firebase.auth.FirebaseAuth
 fun TitleInfoScreen(navController: NavController = NavController(context = LocalContext.current),
                     viewModel: TitleInfoViewModel= androidx.lifecycle.viewmodel.compose.viewModel(),
                     titleId: String? = null) {
-    var titleInfo = remember {mutableStateOf(ETitle()) }
-    var scrollState = rememberScrollState()
-    val isLiked = remember {mutableStateOf(false)}
+    val titleInfo = viewModel.titleInfo.value
+    val scrollState = rememberScrollState()
     val loading = viewModel.loading.value
 
     Scaffold(
@@ -67,22 +66,21 @@ fun TitleInfoScreen(navController: NavController = NavController(context = Local
                 horizontalAlignment = Alignment.Start
                 ) {
 
-                val title = titleInfo.value
-                viewModel.getOneTitle(titleId, titleInfo)
-                viewModel.checkInDb(titleId = titleId.toString(), isLiked)
+                viewModel.getOneTitle(titleId)
+                viewModel.checkInDb(titleId = titleId.toString())
 
 
-                Text(text = "${title.title}", style = MaterialTheme.typography.h4, modifier = Modifier.padding(start = 16.dp), color = MaterialTheme.colors.onBackground)
-                PosterRating(titleInfo, viewModel, isLiked)
-                title.networks?.let { title.networkImg?.let { it1 -> title.showLink?.let { it2 ->
+                Text(text = "${titleInfo.title}", style = MaterialTheme.typography.h4, modifier = Modifier.padding(start = 16.dp), color = MaterialTheme.colors.onBackground)
+                PosterRating(titleInfo, viewModel)
+                titleInfo.networks?.let { titleInfo.networkImg?.let { it1 -> titleInfo.showLink?.let { it2 ->
                     WhereToWatch(modifier = Modifier
                         .padding(.12.dp)
                         .fillMaxWidth(.5f),it, it1, it2 )
                 } } }
-                Summary(title)
+                Summary(titleInfo)
                 Spacer(modifier = Modifier.padding(4.dp))
-                Image(painter = rememberImagePainter(data = "https://image.tmdb.org/t/p/original${title.backdrop}"),
-                    contentDescription = "${title.title} Backdrop Image",
+                Image(painter = rememberImagePainter(data = "https://image.tmdb.org/t/p/original${titleInfo.backdrop}"),
+                    contentDescription = "${titleInfo.title} Backdrop Image",
                     contentScale = ContentScale.FillBounds,
                     modifier = Modifier.height(250.dp)
                 )

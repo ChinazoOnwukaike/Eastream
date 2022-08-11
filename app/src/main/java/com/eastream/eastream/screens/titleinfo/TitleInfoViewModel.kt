@@ -2,7 +2,9 @@ package com.eastream.eastream.screens.titleinfo
 
 import android.util.Log
 import androidx.compose.runtime.MutableState
+import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -18,10 +20,17 @@ import kotlinx.coroutines.launch
 class TitleInfoViewModel: ViewModel() {
 //    private val _loading = MutableLiveData(false)
     var loading = mutableStateOf(false)
+
+    private val _titleInfo: MutableState<ETitle> = mutableStateOf(ETitle())
+    val titleInfo : State<ETitle> = _titleInfo
+
+    private val _isLiked: MutableState<Boolean> = mutableStateOf(false)
+    val isLiked: State<Boolean> = _isLiked
+
     private val userId = FirebaseAuth.getInstance().currentUser?.uid
     private val db = FirebaseFirestore.getInstance()
 
-    fun getOneTitle(titleId:String?, titleInfo: MutableState<ETitle>) = viewModelScope.launch {
+    fun getOneTitle(titleId:String?) = viewModelScope.launch {
 //        Log.d("FB", "getOneTitle: $titleId")
             loading.value = true
 
@@ -33,7 +42,7 @@ class TitleInfoViewModel: ViewModel() {
                             val titleInfoDoc = doc.toObject(ETitle::class.java)
 
                             if (titleInfoDoc != null) {
-                                titleInfo.value = titleInfoDoc
+                                _titleInfo.value = titleInfoDoc
                                 Log.d("FB", "data: ${titleInfo.value} ")
                             }
                         } else Log.d("FB", "getOneTitle: didn't work")
@@ -56,9 +65,9 @@ class TitleInfoViewModel: ViewModel() {
                     if (doc != null) {
                         if (doc.exists()) {
                             Log.d("FB", "getTitles: exists")
-                            isLiked.value = true}
+                            _isLiked.value = true}
                         else {
-                            isLiked.value = false
+                            _isLiked.value = false
                         }
                     }
                 }?.addOnFailureListener{
@@ -99,4 +108,8 @@ class TitleInfoViewModel: ViewModel() {
             }
             loading.value = false
         }
+
+    fun toggleLike() = viewModelScope.launch {
+        _isLiked.value = !_isLiked.value
+    }
 }

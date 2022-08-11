@@ -43,10 +43,10 @@ fun Summary(title: ETitle) {
 @ExperimentalFoundationApi
 //@Preview
 @Composable
-fun PosterRating(titleInfo: MutableState<ETitle> = mutableStateOf(ETitle()), viewModel: TitleInfoViewModel, isLiked: MutableState<Boolean>) {
+fun PosterRating(title: ETitle = ETitle(), viewModel: TitleInfoViewModel) {
     val context = LocalContext.current
-    val title = titleInfo.value
     val auth = FirebaseAuth.getInstance()
+    val isLiked = viewModel.isLiked
 
     Row(
         modifier = Modifier
@@ -87,7 +87,7 @@ fun PosterRating(titleInfo: MutableState<ETitle> = mutableStateOf(ETitle()), vie
                             "${title.title} Removed From Favorites",
                             Toast.LENGTH_SHORT
                         ).show()
-                        isLiked.value = !isLiked.value
+                        viewModel.toggleLike()
                     } else {
                         viewModel.addTitle(title.id.toString(), title.toMap() as Map<String, Any>)
                         Toast.makeText(
@@ -95,7 +95,7 @@ fun PosterRating(titleInfo: MutableState<ETitle> = mutableStateOf(ETitle()), vie
                             "${title.title} Added To Favorites",
                             Toast.LENGTH_SHORT
                         ).show()
-                        isLiked.value = !isLiked.value
+                        viewModel.toggleLike()
                     }
                 }
             }) {

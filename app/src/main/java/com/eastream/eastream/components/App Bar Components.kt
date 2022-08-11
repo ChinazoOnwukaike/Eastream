@@ -3,8 +3,6 @@ package com.eastream.eastream.components
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.LazyListState
-import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.*
@@ -29,10 +27,10 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import com.eastream.eastream.navigation.EastreamScreens
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
+import com.eastream.eastream.screens.titles.TitlesViewModel
 
 @Composable
 fun AppBar(
@@ -41,7 +39,7 @@ fun AppBar(
     showMenu: Boolean = true,
     navController: NavController,
     networks: List<String>? = null,
-    networkName: MutableState<String>? = null,
+    networkName: String? = null,
     onIconClick: () -> Unit = {},
     onSearchTriggered: () -> Unit = {},
     header: String = "",
@@ -83,20 +81,20 @@ fun AppBar(
                 //Search
                 if (showSearch) {
                     IconButton(onClick = {
-                    //todo: Open Search Page
+                        //todo: Open Search Page
 //                    Toast.makeText(context, "Search", Toast.LENGTH_SHORT).show()
-                    onSearchTriggered()
-                }) {
-                    Icon(Icons.Default.Search, contentDescription = "Search Button", tint = MaterialTheme.colors.onPrimary)
-                }
+                        onSearchTriggered()
+                    }) {
+                        Icon(Icons.Default.Search, contentDescription = "Search Button", tint = MaterialTheme.colors.onPrimary)
+                    }
 
                 }//Back to Home
                 else if (homeBtn) {
                     IconButton(onClick = {
-                    navController.navigate(EastreamScreens.TitlesScreen.name)
-                }) {
-                    Icon(Icons.Outlined.Home, contentDescription = "Back to Home", tint = MaterialTheme.colors.onPrimary)
-                }
+                        navController.navigate(EastreamScreens.TitlesScreen.name)
+                    }) {
+                        Icon(Icons.Outlined.Home, contentDescription = "Back to Home", tint = MaterialTheme.colors.onPrimary)
+                    }
                 }}
 
         },
@@ -113,7 +111,8 @@ fun AppBar(
 }
 //@Preview
 @Composable
-fun DropMenu(networks: List<String>, networkName: MutableState<String>) {
+fun DropMenu(networks: List<String>, networkName: String, viewModel: TitlesViewModel = androidx.lifecycle.viewmodel.compose.viewModel()
+) {
     var expanded by remember { mutableStateOf(false) }
     var selectedIndex by remember { mutableStateOf(0) }
 
@@ -127,7 +126,7 @@ fun DropMenu(networks: List<String>, networkName: MutableState<String>) {
             Text(
                 buildAnnotatedString {
                     withStyle(style = SpanStyle(color = MaterialTheme.colors.onPrimary)) {
-                        append("${networkName.value}")
+                        append("${networkName}")
                     }
                     withStyle(
                         style = SpanStyle(
@@ -147,10 +146,10 @@ fun DropMenu(networks: List<String>, networkName: MutableState<String>) {
         DropdownMenu(expanded = expanded,
             onDismissRequest = { expanded = false }) {
             networks.forEachIndexed { index, network ->
-                if (network != networkName.value) DropdownMenuItem(onClick = {
+                if (network != networkName) DropdownMenuItem(onClick = {
                     selectedIndex = index
                     expanded = false
-                    networkName.value = networks[selectedIndex]
+                    viewModel.updateNetworkName(networks[selectedIndex])
                 }) {
                     Text(text = network)
                 }

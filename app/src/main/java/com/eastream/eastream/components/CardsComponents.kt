@@ -80,7 +80,7 @@ fun ShowCard(title: BasicTitleInfo, navController: NavController, addTitle:Boole
 @Composable
 fun NetworkCardsList(
     networkName: String,
-    viewModel: UserProfileViewModel,
+    viewModel: UserProfileViewModel = androidx.lifecycle.viewmodel.compose.viewModel(),
     listOfTitles: MutableState<List<BasicTitleInfo>>,
     navController: NavController,
 ) {
