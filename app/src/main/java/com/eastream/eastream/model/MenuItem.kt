@@ -1,4 +1,4 @@
-package com.eastream.eastream.navigation
+package com.eastream.eastream.model
 
 import androidx.compose.ui.graphics.vector.ImageVector
 

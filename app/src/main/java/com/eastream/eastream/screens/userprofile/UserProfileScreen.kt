@@ -1,26 +1,14 @@
-package com.eastream.eastream.screens
+package com.eastream.eastream.screens.userprofile
 
-import android.util.Log
-import android.widget.Toast
 import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.*
-import androidx.compose.foundation.text.KeyboardActions
-import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.alpha
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.text.TextStyle
-import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.input.ImeAction
-import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.eastream.eastream.components.*
@@ -28,9 +16,7 @@ import com.eastream.eastream.model.BasicTitleInfo
 import com.eastream.eastream.navigation.EastreamScreens
 import com.eastream.eastream.screens.search.SearchViewModel
 import com.eastream.eastream.screens.search.SearchWidgetState
-import com.eastream.eastream.screens.userprofile.UserProfileViewModel
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 import java.util.*
 
@@ -44,12 +30,10 @@ fun UserProfileScreen(
 
         val scaffoldState = rememberScaffoldState()
         val scope = rememberCoroutineScope()
-        val networks = listOf("Netflix", "Rakuten Viki", "Hulu", "Amazon Prime Video", "The Roku Channel", "Tubi TV")
+        val networks = viewModel.networks
         val scrollState = rememberScrollState()
-        val user = FirebaseAuth.getInstance().currentUser
         val searchWidgetState by searchViewModel.searchWidgetState
         val searchTextState by searchViewModel.searchTextState
-        val context = LocalContext.current
 
         Scaffold(
                 scaffoldState = scaffoldState,

@@ -8,7 +8,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.eastream.eastream.screens.UserProfileScreen
+import com.eastream.eastream.screens.userprofile.UserProfileScreen
 import com.eastream.eastream.screens.about.AboutScreen
 import com.eastream.eastream.screens.login.LoginScreen
 import com.eastream.eastream.screens.search.SearchScreen

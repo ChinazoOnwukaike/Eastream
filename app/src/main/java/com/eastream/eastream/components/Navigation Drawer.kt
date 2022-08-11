@@ -23,11 +23,10 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.eastream.eastream.R
 import com.eastream.eastream.navigation.EastreamScreens
-import com.eastream.eastream.navigation.MenuItem
+import com.eastream.eastream.model.MenuItem
 import com.eastream.eastream.repository.StoreThemeMode
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.coroutines.launch
-import org.intellij.lang.annotations.JdkConstants
 
 @Preview
 @Composable
@@ -109,11 +108,12 @@ fun MenuDrawerBody(navController: NavController, scaffoldState:ScaffoldState) {
                 contentDescription = "About Us",
                 icon = Icons.Outlined.Info
             ),
+
             MenuItem(
-                id = "logout",
-                title = "Log Out",
-                contentDescription = "Log Out",
-                icon = Icons.Outlined.Logout
+                id = if (auth.currentUser?.email.isNullOrEmpty()) "login" else "logout",
+                title = if (auth.currentUser?.email.isNullOrEmpty()) "Log In" else "Log Out",
+                contentDescription = if (auth.currentUser?.email.isNullOrEmpty()) "Log In" else "Log Out",
+                icon = if (auth.currentUser?.email.isNullOrEmpty()) Icons.Outlined.Logout else Icons.Outlined.Login
             ),
         ), onItemClick = {
             when (it.id) {
@@ -134,10 +134,13 @@ fun MenuDrawerBody(navController: NavController, scaffoldState:ScaffoldState) {
                 }
                 "logout" -> {
                     //todo: Log out user and then navigate back to Titles screen
-                    FirebaseAuth.getInstance().signOut().run {
+                        auth.signOut().run {
                         navController.navigate(EastreamScreens.TitlesScreen.name)
                     }
                     Toast.makeText(context, "Signed Out", Toast.LENGTH_SHORT).show()
+                }
+                "login" -> {
+                    navController.navigate(EastreamScreens.LoginScreen.name)
                 }
             }
         })
