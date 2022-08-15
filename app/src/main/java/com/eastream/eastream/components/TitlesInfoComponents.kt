@@ -77,14 +77,14 @@ fun PosterRating(title: ETitle = ETitle(), viewModel: TitleInfoViewModel) {
 
             IconButton(onClick = {
                 if (auth.currentUser?.email.isNullOrEmpty()) {
-                    Toast.makeText(context, "Please Sign In To Favorite", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context, "Please Log In To Favorite", Toast.LENGTH_SHORT).show()
                 }
                 else {
                     if (isLiked.value) {
                         viewModel.deleteTitle(title.id.toString())
                         Toast.makeText(
                             context,
-                            "${title.title} Removed From Favorites",
+                            "${title.title} Removed From Profile",
                             Toast.LENGTH_SHORT
                         ).show()
                         viewModel.toggleLike()
@@ -92,7 +92,7 @@ fun PosterRating(title: ETitle = ETitle(), viewModel: TitleInfoViewModel) {
                         viewModel.addTitle(title.id.toString(), title.toMap() as Map<String, Any>)
                         Toast.makeText(
                             context,
-                            "${title.title} Added To Favorites",
+                            "${title.title} Added To Profile",
                             Toast.LENGTH_SHORT
                         ).show()
                         viewModel.toggleLike()
@@ -119,8 +119,6 @@ fun WhereToWatch(modifier: Modifier = Modifier,
                  networkImgs: HashMap<String, String>,
                  networkLinks: HashMap<String, String>) {
     val gridState = rememberLazyListState(0)
-    val uriHandler = LocalUriHandler.current
-    val context = LocalContext.current
     val adapter = if (networks.size <= 6) 60.dp else 130.dp
 
     Surface (modifier = Modifier
@@ -157,8 +155,6 @@ fun NetworkTile(network: String, link: String, networkImg: String) {
                 }
                 .width(40.dp)
                 .height(60.dp)
-//                .border(BorderStroke(1.dp, color = Color.LightGray))
-//                .background(color = Color.LightGray)
             ,
             contentScale = ContentScale.FillHeight
         )

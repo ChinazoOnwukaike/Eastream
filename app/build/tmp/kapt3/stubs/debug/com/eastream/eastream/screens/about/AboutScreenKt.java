@@ -6,6 +6,7 @@ import androidx.compose.ui.Alignment;
 import androidx.compose.ui.Modifier;
 import androidx.compose.ui.graphics.vector.ImageVector;
 import androidx.compose.ui.layout.ContentScale;
+import androidx.compose.ui.text.style.TextAlign;
 import androidx.navigation.NavController;
 import coil.ImageLoader;
 import coil.decode.SvgDecoder;

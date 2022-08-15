@@ -57,13 +57,14 @@ fun AppBar(
                     onClick = onIconClick
                 ) { Icon(Icons.Default.Menu, contentDescription = "Menu", tint = MaterialTheme.colors.onPrimary)
                 }
-                } else {
-                    IconButton(
-                        onClick = ({
-                            navController.popBackStack()
-                        })
-                    ) { Icon(Icons.Outlined.ArrowBack, contentDescription = "Go Back", tint = MaterialTheme.colors.onPrimary) }
                 }
+//                else {
+//                    IconButton(
+//                        onClick = ({
+//                            navController.popBackStack()
+//                        })
+//                    ) { Icon(Icons.Outlined.ArrowBack, contentDescription = "Go Back", tint = MaterialTheme.colors.onPrimary) }
+//                }
 
                 //DropMenu
                 Row(horizontalArrangement = Arrangement.Start, verticalAlignment = Alignment.CenterVertically) {

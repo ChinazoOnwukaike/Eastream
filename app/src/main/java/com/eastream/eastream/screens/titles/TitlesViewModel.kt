@@ -16,9 +16,9 @@ import kotlinx.coroutines.launch
 
 
 class TitlesViewModel: ViewModel() {
-    //    private val _loading : MutableState<Boolean> = mutableStateOf(false)
-    var loading = mutableStateOf(false)
-    //    val titles : MutableList<HashMap<String, Any>> = MutableList<Any>()
+    private val _loading : MutableLiveData<Boolean> = MutableLiveData(false)
+    val loading: LiveData<Boolean> = _loading
+
     private val db = FirebaseFirestore.getInstance()
 
     private val _listOfTitles: MutableState<List<BasicTitleInfo>> = mutableStateOf(listOf<BasicTitleInfo>())
@@ -30,26 +30,30 @@ class TitlesViewModel: ViewModel() {
     val networkName : State<String> = _networkName
 
     fun getTitles(network: String) = viewModelScope.launch  {
-        loading.value = true
-//        delay(2000)
-        db.collection("titles")
-            .whereArrayContains("networks", network)
-            .get()
-            .addOnSuccessListener { docs ->
-                if (docs != null) {
-                    val titles = docs.toObjects(BasicTitleInfo::class.java)
-                    _listOfTitles.value = titles
-//                    loading.value = false
-                } else Log.d("FB", "getTitles: Didn't work")
-            }
-            .addOnFailureListener{
-                Log.d("FB", "getTitles: ", it)
-            }
-        loading.value = false
+            //        delay(2000)
+            _loading.value = true
+            db.collection("titles")
+                .whereArrayContains("networks", network)
+                .get()
+                .addOnSuccessListener { docs ->
+                    if (docs != null) {
+                        val titles = docs.toObjects(BasicTitleInfo::class.java)
+                        _listOfTitles.value = titles
+                        _loading.value = false
+                    } else Log.d("FB", "getTitles: Didn't work")
+                }
+                .addOnFailureListener {
+                    Log.d("FB", "getTitles: ", it)
+                }
+//            _loading.value = false
     }
 
     fun updateNetworkName(newName: String) = viewModelScope.launch{
         _networkName.value = newName
+    }
+
+    fun toggleLoading() = viewModelScope.launch {
+        _loading.value = !_loading.value!!
     }
 }
 

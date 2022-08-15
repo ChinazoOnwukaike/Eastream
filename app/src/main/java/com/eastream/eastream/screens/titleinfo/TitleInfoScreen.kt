@@ -71,6 +71,7 @@ fun TitleInfoScreen(navController: NavController = NavController(context = Local
 
 
                 Text(text = "${titleInfo.title}", style = MaterialTheme.typography.h4, modifier = Modifier.padding(start = 16.dp), color = MaterialTheme.colors.onBackground)
+                Text(text = "${titleInfo.year}", style = MaterialTheme.typography.h6, modifier = Modifier.padding(start = 16.dp), color = MaterialTheme.colors.onBackground)
                 PosterRating(titleInfo, viewModel)
                 titleInfo.networks?.let { titleInfo.networkImg?.let { it1 -> titleInfo.showLink?.let { it2 ->
                     WhereToWatch(modifier = Modifier

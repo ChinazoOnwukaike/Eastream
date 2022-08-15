@@ -16,6 +16,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import coil.ImageLoader
@@ -37,17 +38,17 @@ fun AboutScreen(navController: NavController) {
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally) {
         Text(text = "Eastream is the premiere app for finding where Korean Content is streaming.",
-            style = MaterialTheme.typography.h6, modifier = Modifier.padding(4.dp))
+            style = MaterialTheme.typography.h6, modifier = Modifier.padding(4.dp), textAlign = TextAlign.Center)
 
-        Text(text = "App is built in part with TMDB",
-            style = MaterialTheme.typography.h6, modifier = Modifier.padding(4.dp))
+        Text(text = "App is built in part with TMDB and JustWatch",
+            style = MaterialTheme.typography.h6, modifier = Modifier.padding(4.dp), textAlign = TextAlign.Center)
         CompositionLocalProvider(LocalImageLoader provides imageLoader) {
             val painter = rememberImagePainter(tmdbSvgLink)
             Image(
                 painter = painter,
                 contentDescription = "TMDB SVG Image",
                 modifier = Modifier
-                    .size(100.dp).padding(12.dp),
+                    .size(80.dp).padding(12.dp),
                 contentScale = ContentScale.FillBounds
             )
         }

@@ -69,17 +69,16 @@ fun TitlesScreen(navController: NavController,
         drawerBackgroundColor = MaterialTheme.colors.background
     ) {
         Box(modifier = Modifier.fillMaxSize()) {
+            CircularProgressBar(isDisplayed = loading!!)
             LazyVerticalGrid(
                 cells = GridCells.Fixed(3),
                 state = gridState,
                 content = {
                     viewModel.getTitles(networkName)
-
                     itemsIndexed(listOfTitles.value) { index, title ->
                         ShowCard(title, navController, addTitle = true)
                     }
                 })
-            CircularProgressBar(isDisplayed = loading)
         }
     }
 }
