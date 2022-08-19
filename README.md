@@ -114,11 +114,11 @@ DataStore
 ```
 </details>
 
-Users will also need to set up their Firebase Firestore to have a `Titles` collection prepopulated from the [TMDB Database API](https://www.themoviedb.org/documentation/api?language=en-US)
-The second collection is for users and will be generated dynamically by the code
+Users will also need to set up their Firebase Firestore to have a `Titles` collection prepopulated from the [TMDB Database API](https://www.themoviedb.org/documentation/api?language=en-US).
+The second collection is for users and will be generated dynamically by the code.
 
 <details>
-<summary>Collection Structure</summary>
+<summary>Titles Collection Structure</summary>
 
 ```
 TMDBId : number
