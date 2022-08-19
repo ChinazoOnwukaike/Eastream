@@ -136,7 +136,6 @@ year : number
 </details>
 
 ## Screenshots
-Here are some looks at the main functionality of the app in both light and dark mode (default):
 
 <img src="/Images/SplashScreen.png" alt="Splash Screen" width="200" height="400"> <img src="/Images/Titles.png" alt="Main Screen" width="200" height="400"> 
 <img src="/Images/TitlesLt.png" alt="Main Screen in Light Mode" width="200" height="400"> <img src="/Images/TitleInfo.png" alt="Show Details Screen" width="200" height="400"> <img src="/Images/Profile.png" alt="Profile Screen" width="200" height="400"> <img src="/Images/Menu.png" alt="Menu Image" width="200" height="400">
