@@ -20,12 +20,12 @@ This project uses:
 * Python for populated titles
 
 ## Setting Up The App
-Here are the dependencies needed for this app.
+Here are the dependencies needed for this app:
 
 <details>
 <summary>Dependenices: Project Level</summary>
 
-Add these dependencies to the project level gradle
+Add these dependencies to the project level gradle:
 
 ```
 repositories {
@@ -44,7 +44,7 @@ Dependencies
 <details>
 <summary>Dependencies: App Level</summary>
 
-Add these to your add level gradle
+Add these to your add level gradle:
 
 Add to Plugins
 
